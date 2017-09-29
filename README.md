@@ -1,6 +1,6 @@
 # Storm Connect Contracts
 Public contracts needed to update data through Storm Connect.
 
-Documentation for Storm API can be found at https://storm.io/docs/storm-connect
+Documentation for Storm Connect can be found at https://storm.io/docs/storm-connect
 
 Watch this project to follow our releases.

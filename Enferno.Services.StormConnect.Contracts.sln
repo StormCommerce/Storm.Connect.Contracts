@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26403.7
+VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Enferno.Services.StormConnect.Contracts", "Enferno.Services.StormConnect.Contracts\Enferno.Services.StormConnect.Contracts.csproj", "{46D36931-900E-45E7-A6B5-831A089147F5}"
 EndProject
@@ -12,7 +12,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{7938BA
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{539D7DEC-E0C1-4534-9309-1090F31C110E}"
 	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
 		Enferno.Services.StormConnect.Contracts.nuspec = Enferno.Services.StormConnect.Contracts.nuspec
+		README.md = README.md
 	EndProjectSection
 EndProject
 Global
@@ -32,13 +34,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 2
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs40
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = Enferno.Services.StormConnect.Contracts\\Enferno.Services.StormConnect.Contracts.csproj
-		SccProjectName1 = Enferno.Services.StormConnect.Contracts
-		SccLocalPath1 = Enferno.Services.StormConnect.Contracts
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C8AEA2B9-D2C9-40A4-B971-8D79061E9096}
 	EndGlobalSection
 EndGlobal

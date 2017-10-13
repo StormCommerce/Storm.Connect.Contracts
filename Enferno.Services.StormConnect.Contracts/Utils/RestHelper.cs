@@ -40,24 +40,33 @@ namespace Enferno.Services.StormConnect.Contracts.Utils
 
         public static AuthenticationHeaderValue CreateBasicAuthenticationHeaderValue(int applicationId, Guid secretKey)
         {
-            var credentials =
-                Convert.ToBase64String(Encoding.ASCII.GetBytes($"{applicationId}:{secretKey.ToString("D")}"));
+            var credentials = Convert.ToBase64String(Encoding.ASCII.GetBytes($"{applicationId}:{secretKey.ToString("D")}"));
 
             return new AuthenticationHeaderValue("Basic", credentials); 
         }
 
-        public static T SendStreamedData<T, T2, T3>(string url, int applicationId, Guid secretKey,
+        public static T SendStreamedData<T, T2, T3>(
+            string url,
+            int applicationId,
+            Guid secretKey,
             MyRequest<T2, T3> request,
-            string method = "POST")
+            string method = "POST",
+            int? timeout = null)
         {
             using (var dataStream = request.GetStream())
             {
-                return SendStreamedData<T>(url, applicationId, secretKey, dataStream, request.Header, method);
+                return SendStreamedData<T>(url, applicationId, secretKey, dataStream, request.Header, method, timeout);
             }
         }
 
         public static T SendStreamedData<T>(
-            string url, int applicationId, Guid secretKey, Stream dataStream, object header = null, string method = "POST")
+            string url,
+            int applicationId,
+            Guid secretKey,
+            Stream dataStream,
+            object header = null,
+            string method = "POST",
+            int? timeout = null)
         {
             var webRequest = WebRequest.CreateHttp(url);
             try
@@ -66,6 +75,10 @@ namespace Enferno.Services.StormConnect.Contracts.Utils
                 webRequest.Method = method;
                 webRequest.AllowWriteStreamBuffering = false;
                 webRequest.SendChunked = true;
+                if (timeout.HasValue)
+                {
+                    webRequest.Timeout = timeout.Value;
+                }
                 if (header != null)
                 {
                     var jsonSerializerSettings = new JsonSerializerSettings
@@ -86,6 +99,7 @@ namespace Enferno.Services.StormConnect.Contracts.Utils
                             {
                                 var retval = sw.ReadToEnd();
                                 var job = JsonConvert.DeserializeObject<T>(retval);
+
                                 return job;
                             }
 
@@ -116,12 +130,13 @@ namespace Enferno.Services.StormConnect.Contracts.Utils
                 {
                     value = (string)Convert.ChangeType(property.GetValue(obj), typeof(string));
                 }
-                else if (property.PropertyType.IsGenericType &&
-                         property.PropertyType.GetGenericTypeDefinition() == typeof(List<>))
+                else if (property.PropertyType.IsGenericType && property.PropertyType.GetGenericTypeDefinition() == typeof(List<>))
                 {
                     var list = (IList) tmp;
                     if (list.Count == 0)
+                    {
                         continue;
+                    }
 
                     var memberType = property.PropertyType.GenericTypeArguments[0];
                     var values = new List<string>();
@@ -146,7 +161,9 @@ namespace Enferno.Services.StormConnect.Contracts.Utils
                 }
 
                 if (string.IsNullOrEmpty(value))
+                {
                     continue;
+                }
 
                 kvps.Add($"{property.Name}={HttpUtility.UrlEncode(value)}");
             }

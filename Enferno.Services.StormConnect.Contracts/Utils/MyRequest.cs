@@ -18,7 +18,7 @@ namespace Enferno.Services.StormConnect.Contracts.Utils
 
         public Stream GetStream(SerializationType serializationType = SerializationType.Json)
         {
-            return new EnumeratorStream(this.Items().GetEnumerator(), serializationType);
+            return new EnumeratorStream(Items().GetEnumerator(), serializationType);
         }
 
         public IEnumerable Items()

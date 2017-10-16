@@ -7,6 +7,6 @@ namespace Enferno.Services.StormConnect.Contracts.Order
     public class Header
     {
         [DataMember(Order = 1)]
-        public Guid? ApplicationKey { get; set; }
+        public Guid? ApplicationKey { get; set; }     
     }
 }

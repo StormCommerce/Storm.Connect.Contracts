@@ -25,7 +25,7 @@ namespace Enferno.Services.StormConnect.Contracts.Job
         [DataMember]
         public DateTime? Stop { get; set; }
         [DataMember]
-        public System.DateTime LastUpdated { get; set; }
+        public DateTime LastUpdated { get; set; }
         [DataMember]
         public bool IsFinished { get; set; }
         [DataMember]

@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
 
 namespace Enferno.Services.StormConnect.Contracts.Order
 {
@@ -16,6 +15,4 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         [DataMember(Order = 4)]
         public string ErpOrderNo { get; set; }
     }
-
 }
-

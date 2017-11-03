@@ -49,8 +49,6 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         public Header Header { get; set; }
         [DataMember(Order = 21)]
         public OrderTypes OrderType { get; set; }
-        [DataMember(Order = 22)]
-        public string Source { get; set; }
 
         public virtual ExtensionDataObject ExtensionData { get; set; }
     }

@@ -25,13 +25,13 @@ namespace Enferno.Services.StormConnect.Contracts.Utils
         public T Get<T>(string url)
         {
             var webRequest = WebRequest.CreateHttp(BaseAddress + url);
-            webRequest.Headers[HttpRequestHeader.Authorization] =
-                CreateBasicAuthenticationHeaderValue(ApplicationId, SecretKey).ToString();
+            webRequest.Headers[HttpRequestHeader.Authorization] = CreateBasicAuthenticationHeaderValue(ApplicationId, SecretKey).ToString();
             using (var stream = webRequest.GetResponseWithTimeout().GetResponseStream())
                 if (stream != null)
                     using (var sw = new StreamReader(stream))
                     {
                         var job = JsonConvert.DeserializeObject<T>(sw.ReadToEnd());
+
                         return job;
                     }
 

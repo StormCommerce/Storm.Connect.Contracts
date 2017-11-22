@@ -9,7 +9,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Contracts for Storm Connect.</description>
     <releaseNotes>
-      Utils:
+      Order:
         - Added source to OrderRequest contract
     </releaseNotes>
     <copyright>Copyright 2017</copyright>

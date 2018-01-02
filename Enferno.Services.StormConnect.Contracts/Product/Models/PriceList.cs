@@ -25,5 +25,13 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Models
         public string TypeCode { get; set; }
         [DataMember]
         public IEnumerable<Warehouse> Warehouses { get; set; }
+        [DataMember]
+        public string DefaultPriceRuleCode { get; set; }
+        [DataMember]
+        public decimal? DefaultPriceRuleValue { get; set; }
+        [DataMember]
+        public string Description { get; set; }
+        [DataMember]
+        public bool IsErpIntegrated { get; set; }
     }
 }

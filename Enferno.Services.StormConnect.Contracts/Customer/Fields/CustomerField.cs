@@ -41,5 +41,7 @@ namespace Enferno.Services.StormConnect.Contracts.Customer.Fields
         Flags = 16,
         [EnumMember]
         PriceLists = 17,
+        [EnumMember]
+        SearchOnlyByCode = 18
     }
 }

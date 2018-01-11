@@ -33,5 +33,7 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Models
         public List<ParametricValue> ProductParametrics { get; set; }
         [DataMember]
         public VariantDefinitionGroup VariantDefinitionGroup { get; set; }
+        [DataMember]
+        public string AssortmentCode { get; set; }
     }
 }

@@ -21,5 +21,11 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Fields
         TypeCode = 6,
         [EnumMember]
         Warehouses = 7,
+        [EnumMember]
+        DefaultPriceRule = 8,
+        [EnumMember]
+        Description = 9,
+        [EnumMember]
+        IsErpIntegrated = 10
     }
 }

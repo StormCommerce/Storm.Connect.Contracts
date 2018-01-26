@@ -35,6 +35,5 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Models
         public string UniqueUrlName { get; set; }
         [DataMember]
         public bool IsUniqueUrlNameManuallyMaintained { get; set; }
-
     }
 }

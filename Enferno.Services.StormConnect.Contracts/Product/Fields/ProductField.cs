@@ -34,6 +34,10 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Fields
         [EnumMember]
         VariantDefinitionGroupCreateOnly = 13,
         [EnumMember]
-        Assortment = 14
-    }
+        Assortment = 14,
+        [EnumMember]
+        UniqueUrlName = 15,
+        [EnumMember]
+        IsUniqueUrlNameManuallyMaintained = 16
+}
 }

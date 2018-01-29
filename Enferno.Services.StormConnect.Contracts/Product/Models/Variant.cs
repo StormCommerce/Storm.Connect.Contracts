@@ -32,8 +32,6 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Models
         [DataMember]
         public List<DeliveryMethod> DeliveryMethods { get; set; }
         [DataMember]
-        public string UniqueUrlName { get; set; }
-        [DataMember]
-        public bool IsUniqueUrlNameManuallyMaintained { get; set; }
+        public string DefaultUniqueUrlName { get; set; }
     }
 }

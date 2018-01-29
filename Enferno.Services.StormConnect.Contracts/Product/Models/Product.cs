@@ -34,8 +34,6 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Models
         [DataMember]
         public VariantDefinitionGroup VariantDefinitionGroup { get; set; }
         [DataMember]
-        public string AssortmentCode { get; set; }
-        [DataMember]
-        public string DefaultUniqueUrlName { get; set; }
+        public string AssortmentCode { get; set; }       
     }
 }

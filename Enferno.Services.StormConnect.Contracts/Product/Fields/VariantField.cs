@@ -32,8 +32,6 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Fields
         [EnumMember]
         DeliveryMethods = 12,
         [EnumMember]
-        DeliveryMethodsCreateOnly = 13,
-        [EnumMember]
-        DefaultUniqueUrlName = 14,
+        DeliveryMethodsCreateOnly = 13       
     }
 }

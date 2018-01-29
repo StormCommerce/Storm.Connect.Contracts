@@ -30,8 +30,6 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Models
         [DataMember]
         public List<VariantDefinition> NonParametricVariantDefinitions { get; set; }
         [DataMember]
-        public List<DeliveryMethod> DeliveryMethods { get; set; }
-        [DataMember]
-        public string DefaultUniqueUrlName { get; set; }
+        public List<DeliveryMethod> DeliveryMethods { get; set; }        
     }
 }

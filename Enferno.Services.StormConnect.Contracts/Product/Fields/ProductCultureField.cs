@@ -31,5 +31,9 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Fields
         MetaDescription = 11,
         [EnumMember]
         NameLimitedUpdate = 12,
+        [EnumMember]
+        UniqueUrlName = 13,
+        [EnumMember]
+        IsUniqueUrlNameManuallyMaintained = 14
     }
 }

@@ -26,6 +26,8 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Fields
         [EnumMember]
         Description = 9,
         [EnumMember]
-        IsErpIntegrated = 10
+        IsErpIntegrated = 10,
+        [EnumMember]
+        IgnoreApplicationPriceList = 11
     }
 }

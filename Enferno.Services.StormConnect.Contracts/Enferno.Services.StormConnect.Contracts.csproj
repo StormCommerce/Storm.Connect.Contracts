@@ -119,6 +119,8 @@
     <Compile Include="Order\Fee.cs" />
     <Compile Include="Order\Fees.cs" />
     <Compile Include="Order\Header.cs" />
+    <Compile Include="Order\Credit.cs" />
+    <Compile Include="Order\CreditItem.cs" />
     <Compile Include="Order\IOrderNotificationService.cs" />
     <Compile Include="Order\IOrderService.cs" />
     <Compile Include="Order\DeliveryNote.cs" />

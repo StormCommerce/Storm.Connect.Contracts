@@ -23,12 +23,8 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         [DataMember(Order = 7)]
         public string CurrencyCode { get; set; }
         [DataMember(Order = 8)]
-        public decimal Vat { get; set; }
-        [DataMember(Order = 9)]
         public List<CreditItem> Items { get; set; }
-        [DataMember(Order = 10)]
-        public string Name { get; set; }
-        [DataMember(Order = 11)]
+        [DataMember(Order = 9)]
         public Address Address { get; set; }
     }
 }

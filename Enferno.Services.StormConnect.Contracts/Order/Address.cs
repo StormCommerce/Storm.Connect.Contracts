@@ -1,9 +1,10 @@
 ﻿using System.Runtime.Serialization;
+using Enferno.Services.Contracts;
 
 namespace Enferno.Services.StormConnect.Contracts.Order
 {
     [DataContract(Name = "Address", Namespace = "Enferno.Services.StormConnect.Contracts.Order")]
-    public class Address : IExtensibleDataObject
+    public class Address : Entity
     {
         [DataMember(Order = 1)]
         public string Type { get; set; }
@@ -23,7 +24,5 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         public string Country { get; set; }
         [DataMember(Order = 9)]
         public string CareOf { get; set; }
-
-        public virtual ExtensionDataObject ExtensionData { get; set; }
     }
 }

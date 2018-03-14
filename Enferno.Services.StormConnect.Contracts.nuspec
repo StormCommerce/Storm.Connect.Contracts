@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>Enferno.Services.StormConnect.Contracts</id>
-    <version>2.2.19-beta2</version>
+    <version>2.2.19-beta3</version>
     <title>Enferno.Services.StormConnect.Contracts</title>
     <authors>Enferno AB</authors>
     <owners>Enferno AB</owners>
@@ -11,6 +11,7 @@
     <releaseNotes>
       Order:
           - Added ProductName filed to CreditItem entity.
+          - Added CreditPayment method to Order service.
           - Renamed Description field to ProductDescription in CreditItem entity.
           - Removed ApplicationKey, Vat and Name fields from Credit entity.
     </releaseNotes>

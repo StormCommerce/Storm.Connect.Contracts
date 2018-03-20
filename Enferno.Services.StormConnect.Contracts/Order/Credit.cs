@@ -15,20 +15,14 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         [DataMember(Order = 3)]
         public string ErpOrderNo { get; set; }
         [DataMember(Order = 4)]
-        public Guid? ApplicationKey { get; set; }
-        [DataMember(Order = 5)]
         public DateTime CreditDate { get; set; }
-        [DataMember(Order = 6)]
+        [DataMember(Order = 5)]
         public Payment Payment { get; set; }
-        [DataMember(Order = 7)]
+        [DataMember(Order = 6)]
         public string CurrencyCode { get; set; }
-        [DataMember(Order = 8)]
-        public decimal Vat { get; set; }
-        [DataMember(Order = 9)]
+        [DataMember(Order = 7)]
         public List<CreditItem> Items { get; set; }
-        [DataMember(Order = 10)]
-        public string Name { get; set; }
-        [DataMember(Order = 11)]
+        [DataMember(Order = 8)]
         public Address Address { get; set; }
     }
 }

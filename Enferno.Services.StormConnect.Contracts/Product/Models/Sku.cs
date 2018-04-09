@@ -38,7 +38,6 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Models
         [DataMember]
         public decimal? ActualWeight { get; set; }
         [DataMember]
-        [Obsolete("Sku.VolumeWeight field is deprecated as it is a calculated value. Will be removed in future releases.")]
         public decimal? VolumeWeight { get; set; }
         [DataMember]
         public decimal? LogisticWidth { get; set; }

@@ -21,9 +21,5 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         [OperationContract]
         [WebInvoke(UriTemplate = "SendOrderStatus")]
         void SendOrderStatus(SendOrderStatusRequest statusRequest);
-
-        [OperationContract]
-        [WebInvoke(UriTemplate = "CreditPayment")]
-        void CreditPayment(Credit credit);
     }
 }

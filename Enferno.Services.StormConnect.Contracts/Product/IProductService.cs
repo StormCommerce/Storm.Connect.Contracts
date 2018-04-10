@@ -1,5 +1,6 @@
 ﻿using System.ServiceModel;
 using System.ServiceModel.Web;
+using Enferno.Services.StormConnect.Contracts.Product.Models;
 
 namespace Enferno.Services.StormConnect.Contracts.Product
 {
@@ -26,6 +27,8 @@ namespace Enferno.Services.StormConnect.Contracts.Product
         [WebInvoke(UriTemplate = "ImportOnhand")]
         Response ImportOnhands(Request<SkuOnhandHeader, Models.SkuOnhand> request);
 
-
+        [OperationContract]
+        [WebInvoke(UriTemplate = "ImportCompetitorSku")]
+        Response ImportCompetitorSkus(Request<ProductHeader, Models.CompetitorSku> request);
     }
 }

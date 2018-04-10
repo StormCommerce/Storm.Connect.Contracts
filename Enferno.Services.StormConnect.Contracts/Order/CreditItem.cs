@@ -11,10 +11,8 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         [DataMember(Order = 2)]
         public string PartNo { get; set; }
         [DataMember(Order = 3)]
-        public string ProductName { get; set; }
+        public string Description { get; set; }
         [DataMember(Order = 4)]
-        public string ProductDescription { get; set; }
-        [DataMember(Order = 5)]
         public int Quantity { get; set; }
         [DataMember(Order = 6)]
         public decimal UnitPrice { get; set; }

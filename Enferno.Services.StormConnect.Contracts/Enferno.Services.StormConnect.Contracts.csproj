@@ -154,6 +154,8 @@
     <Compile Include="Product\Fields\WarehouseField.cs" />
     <Compile Include="Product\Fields\SkuStructureItemField.cs" />
     <Compile Include="Product\Fields\SkuPriceListField.cs" />
+    <Compile Include="Product\Models\ExternalPopularity.cs" />
+    <Compile Include="Product\Models\CompetitorSku.cs" />
     <Compile Include="Product\Models\Info.cs" />
     <Compile Include="Product\Models\ParametricValueList.cs" />
     <Compile Include="Product\Models\DeliveryMethod.cs" />

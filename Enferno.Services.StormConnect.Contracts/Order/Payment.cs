@@ -1,11 +1,9 @@
-﻿using System.Collections.Generic;
-using System.Runtime.Serialization;
-using Enferno.Services.Contracts;
+﻿using System.Runtime.Serialization;
 
 namespace Enferno.Services.StormConnect.Contracts.Order
 {
     [DataContract(Name = "Payment", Namespace = "Enferno.Services.StormConnect.Contracts.Order")]
-    public class Payment : Entity
+    public class Payment
     {
         [DataMember(Order = 1)]
         public int PaymentCode { get; set; }
@@ -18,6 +16,6 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         [DataMember(Order = 5)]
         public string CurrencyCode { get; set; }
         [DataMember(Order = 6)]
-        public List<CodeValue> AdditionalInfo { get; set; }
+        public CodeValues AdditionalInfo { get; set; }
     }
 }

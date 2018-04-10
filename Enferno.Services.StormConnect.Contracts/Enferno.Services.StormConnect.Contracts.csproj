@@ -149,6 +149,7 @@
     <Compile Include="Product\Fields\ProductField.cs" />
     <Compile Include="Product\Fields\SkuCultureField.cs" />
     <Compile Include="Product\Fields\SkuField.cs" />
+    <Compile Include="Product\Fields\CompetitorSkuField.cs" />
     <Compile Include="Product\Fields\SkuOnhandField.cs" />
     <Compile Include="Product\Fields\WarehouseLocationField.cs" />
     <Compile Include="Product\Fields\WarehouseField.cs" />
@@ -179,6 +180,7 @@
     <Compile Include="Product\Models\SkuOnhand.cs" />
     <Compile Include="Product\Models\VatRate.cs" />
     <Compile Include="Product\Models\SalesArea.cs" />
+    <Compile Include="Product\CompetitorSkuHeader.cs" />
     <Compile Include="Product\SkuOnhandHeader.cs" />
     <Compile Include="Product\PriceListHeader.cs" />
     <Compile Include="Product\SkuPriceListHeader.cs" />

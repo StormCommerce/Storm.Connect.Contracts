@@ -2,15 +2,17 @@
 <package>
   <metadata>
     <id>Enferno.Services.StormConnect.Contracts</id>
-    <version>2.2.20-beta3</version>
+    <version>2.2.20-beta4</version>
     <title>Enferno.Services.StormConnect.Contracts</title>
     <authors>Enferno AB</authors>
     <owners>Enferno AB</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Contracts for Storm Connect.</description>
     <releaseNotes>
+      Order:
+      - Removed Credit contracts. Invoice shall be used instead.
       Product:
-      - Corrected ImportCompetitorSkus method
+      - Corrected ImportCompetitorSkus method.
     </releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags>Enferno Services StormConnect Contracts</tags>

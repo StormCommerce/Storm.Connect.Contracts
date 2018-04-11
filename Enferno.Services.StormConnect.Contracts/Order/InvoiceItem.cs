@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Runtime.Serialization;
+using Enferno.Services.Contracts;
 
 namespace Enferno.Services.StormConnect.Contracts.Order
 {
     [DataContract(Name = "InvoiceItem", Namespace = "Enferno.Services.StormConnect.Contracts.Order")]
-    public class InvoiceItem
+    public class InvoiceItem : Entity
     {
         [DataMember(Order = 1)]
         public decimal LineNo { get; set; }

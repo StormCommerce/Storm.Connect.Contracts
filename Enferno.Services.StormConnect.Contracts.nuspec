@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>Enferno.Services.StormConnect.Contracts</id>
-    <version>2.2.20-beta4</version>
+    <version>2.2.20-beta5</version>
     <title>Enferno.Services.StormConnect.Contracts</title>
     <authors>Enferno AB</authors>
     <owners>Enferno AB</owners>
@@ -11,6 +11,7 @@
     <releaseNotes>
       Order:
       - Removed Credit contracts. Invoice shall be used instead.
+      - Added IsDebit, CreditedInvoiceNo and Comment fields to Invoice entity.
       Product:
       - Corrected ImportCompetitorSkus method.
     </releaseNotes>

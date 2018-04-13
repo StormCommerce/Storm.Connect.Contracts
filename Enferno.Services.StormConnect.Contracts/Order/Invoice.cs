@@ -54,5 +54,13 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         public string CreditedInvoiceNo { get; set; }
         [DataMember(Order = 22)]
         public string Comment { get; set; }
+        [DataMember(Order = 23)]
+        public string Attention { get; set; }
+        [DataMember(Order = 24)]
+        public string CareOf { get; set; }
+        [DataMember(Order = 25)]
+        public string Region { get; set; }
+        [DataMember(Order = 26)]
+        public string Country { get; set; }
     }
 }

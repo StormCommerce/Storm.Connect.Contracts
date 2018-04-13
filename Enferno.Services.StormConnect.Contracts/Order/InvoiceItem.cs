@@ -32,5 +32,7 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         [DataMember(Order = 12)]
         [Obsolete("InvoiceItem.Discount field is deprecated. It will be removed in December 2017.")]
         public decimal? Discount { get; set; }
+        [DataMember(Order = 13)]
+        public string ProductName { get; set; }
     }
 }

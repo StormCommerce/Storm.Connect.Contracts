@@ -51,10 +51,8 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         [DataMember(Order = 20)]
         public bool? IsLastInvoiceForOrder { get; set; }
         [DataMember(Order = 21)]
-        public bool? IsDebit { get; set; }
-        [DataMember(Order = 22)]
         public string CreditedInvoiceNo { get; set; }
-        [DataMember(Order = 23)]
+        [DataMember(Order = 22)]
         public string Comment { get; set; }
     }
 }

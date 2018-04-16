@@ -27,6 +27,8 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Models
         [DataMember]
         public bool IsPricesInclVat { get; set; }
         [DataMember]
+        public SalesArea SalesArea { get; set; }
+        [DataMember]
         public decimal? VatRate { get; set; }
         [DataMember]
         public bool IsInStock { get; set; }

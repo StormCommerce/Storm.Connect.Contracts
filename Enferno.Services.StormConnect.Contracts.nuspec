@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>Enferno.Services.StormConnect.Contracts</id>
-    <version>2.2.20-beta9</version>
+    <version>2.2.20-beta10</version>
     <title>Enferno.Services.StormConnect.Contracts</title>
     <authors>Enferno AB</authors>
     <owners>Enferno AB</owners>
@@ -14,7 +14,11 @@
       - Added CreditedInvoiceNo, Comment, Attention, CareOf, Region, Country and GroupCode fields to Invoice entity.
       - Added ProductName field to InvoiceItem entity.
       Product:
-      - Corrected ImportCompetitorSkus method.
+      - Added ImportCompetitorSkus endpoint.
+      - Added CompetitorSku model.
+      - Added CompetitorSkuHeader and fields.
+      - Added ExternalPopularity model.
+      - Reverted deprecation of VolumeWeight field in Sku.
     </releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags>Enferno Services StormConnect Contracts</tags>

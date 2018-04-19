@@ -1,9 +1,10 @@
 ﻿using System.Runtime.Serialization;
+using Enferno.Services.Contracts;
 
 namespace Enferno.Services.StormConnect.Contracts.Order
 {
     [DataContract(Name = "Payment", Namespace = "Enferno.Services.StormConnect.Contracts.Order")]
-    public class Payment
+    public class Payment : Entity
     {
         [DataMember(Order = 1)]
         public int PaymentCode { get; set; }

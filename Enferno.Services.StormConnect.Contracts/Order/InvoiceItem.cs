@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Runtime.Serialization;
+using Enferno.Services.Contracts;
 
 namespace Enferno.Services.StormConnect.Contracts.Order
 {
     [DataContract(Name = "InvoiceItem", Namespace = "Enferno.Services.StormConnect.Contracts.Order")]
-    public class InvoiceItem
+    public class InvoiceItem : Entity
     {
         [DataMember(Order = 1)]
         public decimal LineNo { get; set; }
@@ -31,5 +32,7 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         [DataMember(Order = 12)]
         [Obsolete("InvoiceItem.Discount field is deprecated. It will be removed in December 2017.")]
         public decimal? Discount { get; set; }
+        [DataMember(Order = 13)]
+        public string ProductName { get; set; }
     }
 }

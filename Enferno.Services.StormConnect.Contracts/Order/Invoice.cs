@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
+using Enferno.Services.Contracts;
 
 namespace Enferno.Services.StormConnect.Contracts.Order
 {
     [DataContract(Name = "Invoice", Namespace = "Enferno.Services.StormConnect.Contracts.Order")]
-    public class Invoice
+    public class Invoice : Entity
     {
         [DataMember(Order = 1)]
         public string InvoiceNo { get; set; }
@@ -49,5 +50,19 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         public Guid? ApplicationKey { get; set; }
         [DataMember(Order = 20)]
         public bool? IsLastInvoiceForOrder { get; set; }
+        [DataMember(Order = 21)]
+        public string CreditedInvoiceNo { get; set; }
+        [DataMember(Order = 22)]
+        public string Comment { get; set; }
+        [DataMember(Order = 23)]
+        public string Attention { get; set; }
+        [DataMember(Order = 24)]
+        public string CareOf { get; set; }
+        [DataMember(Order = 25)]
+        public string Region { get; set; }
+        [DataMember(Order = 26)]
+        public string Country { get; set; }
+        [DataMember(Order = 27)]
+        public string GroupCode { get; set; }
     }
 }

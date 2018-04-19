@@ -2,19 +2,23 @@
 <package>
   <metadata>
     <id>Enferno.Services.StormConnect.Contracts</id>
-    <version>2.2.19-beta1</version>
+    <version>2.2.20</version>
     <title>Enferno.Services.StormConnect.Contracts</title>
     <authors>Enferno AB</authors>
     <owners>Enferno AB</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Contracts for Storm Connect.</description>
     <releaseNotes>
+      Order:
+      - Removed Credit contracts. Invoice shall be used instead.
+      - Added CreditedInvoiceNo, Comment, Attention, CareOf, Region, Country and GroupCode fields to Invoice entity.
+      - Added ProductName field to InvoiceItem entity.
       Product:
-      - Added ImportCompetitorSkus endpoint
-      - Added CompetitorSku model
-      - Added ExternalPopularity model
-      - Reverted deprecattion of VolumeWeight field in Sku.
-
+      - Added ImportCompetitorSkus endpoint.
+      - Added CompetitorSku model.
+      - Added CompetitorSkuHeader and fields.
+      - Added ExternalPopularity model.
+      - Reverted deprecation of VolumeWeight field in Sku.
     </releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags>Enferno Services StormConnect Contracts</tags>

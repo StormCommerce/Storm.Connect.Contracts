@@ -119,8 +119,6 @@
     <Compile Include="Order\Fee.cs" />
     <Compile Include="Order\Fees.cs" />
     <Compile Include="Order\Header.cs" />
-    <Compile Include="Order\Credit.cs" />
-    <Compile Include="Order\CreditItem.cs" />
     <Compile Include="Order\IOrderNotificationService.cs" />
     <Compile Include="Order\IOrderService.cs" />
     <Compile Include="Order\DeliveryNote.cs" />
@@ -149,6 +147,7 @@
     <Compile Include="Product\Fields\ProductField.cs" />
     <Compile Include="Product\Fields\SkuCultureField.cs" />
     <Compile Include="Product\Fields\SkuField.cs" />
+    <Compile Include="Product\Fields\CompetitorSkuField.cs" />
     <Compile Include="Product\Fields\SkuOnhandField.cs" />
     <Compile Include="Product\Fields\WarehouseLocationField.cs" />
     <Compile Include="Product\Fields\WarehouseField.cs" />
@@ -179,6 +178,7 @@
     <Compile Include="Product\Models\SkuOnhand.cs" />
     <Compile Include="Product\Models\VatRate.cs" />
     <Compile Include="Product\Models\SalesArea.cs" />
+    <Compile Include="Product\CompetitorSkuHeader.cs" />
     <Compile Include="Product\SkuOnhandHeader.cs" />
     <Compile Include="Product\PriceListHeader.cs" />
     <Compile Include="Product\SkuPriceListHeader.cs" />

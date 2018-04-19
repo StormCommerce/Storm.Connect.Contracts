@@ -29,6 +29,6 @@ namespace Enferno.Services.StormConnect.Contracts.Product
 
         [OperationContract]
         [WebInvoke(UriTemplate = "ImportCompetitorSku")]
-        Response ImportCompetitorSkus(Request<ProductHeader, Models.CompetitorSku> request);
+        Response ImportCompetitorSkus(Request<CompetitorSkuHeader, Models.CompetitorSku> request);
     }
 }

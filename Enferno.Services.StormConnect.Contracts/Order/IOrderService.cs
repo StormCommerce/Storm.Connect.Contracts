@@ -8,7 +8,7 @@ namespace Enferno.Services.StormConnect.Contracts.Order
     {
         [OperationContract]
         [WebInvoke(UriTemplate = "CreateInvoice")]
-        void CreateInvoice(Invoice invoice);
+        void CreateInvoice(Invoice request);
 
         [OperationContract]
         [WebInvoke(UriTemplate = "CreateDeliveryNote")]

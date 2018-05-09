@@ -1,234 +1,34 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{46D36931-900E-45E7-A6B5-831A089147F5}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Enferno.Services.StormConnect.Contracts</RootNamespace>
-    <AssemblyName>Enferno.Services.StormConnect.Contracts</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <SccProjectName>SAK</SccProjectName>
-    <SccLocalPath>SAK</SccLocalPath>
-    <SccAuxPath>SAK</SccAuxPath>
-    <SccProvider>SAK</SccProvider>
-    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
-    <RestorePackages>true</RestorePackages>
+    <TargetFrameworks>netcoreapp2.0;net45</TargetFrameworks>
+    <NoWarn>CS1591</NoWarn>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Debug\Enferno.Services.StormConnect.Contracts.XML</DocumentationFile>
-    <NoWarn>1591</NoWarn>
+
+  <PropertyGroup Condition="'$(TargetFramework)' == 'netcoreapp2.0'">
+    <DefineConstants>NETCORE</DefineConstants>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Integration|AnyCPU'">
-    <OutputPath>bin\Integration\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <Optimize>true</Optimize>
-    <DebugType>pdbonly</DebugType>
-    <PlatformTarget>AnyCPU</PlatformTarget>
-    <ErrorReport>prompt</ErrorReport>
-    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
-  </PropertyGroup>
+
   <ItemGroup>
-    <Reference Include="Enferno.Services.Contracts.Message, Version=1.0.0.0, Culture=neutral, PublicKeyToken=33afbde1e215b864, processorArchitecture=MSIL">
-      <HintPath>..\packages\Enferno.Services.Contracts.Message.1.0.0.6\lib\net45\Enferno.Services.Contracts.Message.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Runtime.Serialization" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
+    <PackageReference Include="Enferno.Services.Contracts.Message" Version="1.1.0-beta3" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net45'">
+
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.ServiceModel.Web" />
     <Reference Include="System.Web" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
+
+    <PackageReference Include="System.Net.Http" Version="4.3.3" />
+
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Common\OrderType.cs" />
-    <Compile Include="Customer\Fields\AccountField.cs" />
-    <Compile Include="Customer\Fields\CompanyField.cs" />
-    <Compile Include="Customer\Fields\CustomerField.cs" />
-    <Compile Include="Customer\ICustomerService.cs" />
-    <Compile Include="Customer\Models\Account.cs" />
-    <Compile Include="Customer\Models\Address.cs" />
-    <Compile Include="Customer\Models\Customer.cs" />
-    <Compile Include="Customer\Models\Company.cs" />
-    <Compile Include="Customer\Models\CustomerType.cs" />
-    <Compile Include="Customer\Models\AccountStatus.cs" />
-    <Compile Include="Customer\Models\AccountRole.cs" />
-    <Compile Include="Customer\Models\PriceList.cs" />
-    <Compile Include="Customer\Models\PaymentMethod.cs" />
-    <Compile Include="Customer\Models\Info.cs" />
-    <Compile Include="Customer\Models\Flag.cs" />
-    <Compile Include="Customer\Models\Division.cs" />
-    <Compile Include="Customer\Models\Discount.cs" />
-    <Compile Include="Customer\Models\DeliveryMethod.cs" />
-    <Compile Include="Customer\Models\Contact.cs" />
-    <Compile Include="Customer\Models\DiscountType.cs" />
-    <Compile Include="Customer\CustomerHeader.cs" />
-    <Compile Include="ExternalContent\Models\ExternalContentParametricCulture.cs" />
-    <Compile Include="ExternalContent\IExternalContentService.cs" />
-    <Compile Include="ExternalContent\Models\ExternalContentCategory.cs" />
-    <Compile Include="ExternalContent\Models\ExternalContentCategoryCulture.cs" />
-    <Compile Include="ExternalContent\Fields\ExternalContentCategoryField.cs" />
-    <Compile Include="ExternalContent\Models\ExternalContentCategoryParametric.cs" />
-    <Compile Include="ExternalContent\Models\ExternalContentParametric.cs" />
-    <Compile Include="ExternalContent\Fields\ExternalContentParametricField.cs" />
-    <Compile Include="ExternalContent\Models\ExternalContentParametricGroup.cs" />
-    <Compile Include="ExternalContent\Models\ExternalContentParametricGroupCulture.cs" />
-    <Compile Include="ExternalContent\MetadataHeader.cs" />
-    <Compile Include="Common\ParametricType.cs" />
-    <Compile Include="ExternalContent\Models\ExternalContentProduct.cs" />
-    <Compile Include="ExternalContent\Models\Parametric.cs" />
-    <Compile Include="Order\Address.cs" />
-    <Compile Include="Order\Addresses.cs" />
-    <Compile Include="Order\CancelOrderRequest.cs" />
-    <Compile Include="Order\ClientCustomer.cs" />
-    <Compile Include="Order\CodeValue.cs" />
-    <Compile Include="Order\CodeValues.cs" />
-    <Compile Include="Order\Company.cs" />
-    <Compile Include="Order\Customer.cs" />
-    <Compile Include="Order\DeliveryCodeList.cs" />
-    <Compile Include="Order\Discount.cs" />
-    <Compile Include="Order\Discounts.cs" />
-    <Compile Include="Order\Fee.cs" />
-    <Compile Include="Order\Fees.cs" />
-    <Compile Include="Order\Header.cs" />
-    <Compile Include="Order\IOrderNotificationService.cs" />
-    <Compile Include="Order\IOrderService.cs" />
-    <Compile Include="Order\DeliveryNote.cs" />
-    <Compile Include="Order\Invoice.cs" />
-    <Compile Include="Order\InvoiceItem.cs" />
-    <Compile Include="Order\OrderInfo.cs" />
-    <Compile Include="Order\OrderItem.cs" />
-    <Compile Include="Order\OrderItemStatus.cs" />
-    <Compile Include="Order\OrderItems.cs" />
-    <Compile Include="Order\OrderRequest.cs" />
-    <Compile Include="Order\OrderResponse.cs" />
-    <Compile Include="Order\SendOrderStatusRequest.cs" />
-    <Compile Include="Order\Payment.cs" />
-    <Compile Include="Order\OrderStatus.cs" />
-    <Compile Include="Order\PaymentCodeList.cs" />
-    <Compile Include="Order\Payments.cs" />
-    <Compile Include="Order\PickupStore.cs" />
-    <Compile Include="Order\PricelistCodeList.cs" />
-    <Compile Include="Order\PriceListItem.cs" />
-    <Compile Include="Order\PriceListItems.cs" />
-    <Compile Include="Order\Promotion.cs" />
-    <Compile Include="Order\Promotions.cs" />
-    <Compile Include="Order\ShippingAdvice.cs" />
-    <Compile Include="Product\Fields\PriceListField.cs" />
-    <Compile Include="Product\Fields\ProductCultureField.cs" />
-    <Compile Include="Product\Fields\ProductField.cs" />
-    <Compile Include="Product\Fields\SkuCultureField.cs" />
-    <Compile Include="Product\Fields\SkuField.cs" />
-    <Compile Include="Product\Fields\CompetitorSkuField.cs" />
-    <Compile Include="Product\Fields\SkuOnhandField.cs" />
-    <Compile Include="Product\Fields\WarehouseLocationField.cs" />
-    <Compile Include="Product\Fields\WarehouseField.cs" />
-    <Compile Include="Product\Fields\SkuStructureItemField.cs" />
-    <Compile Include="Product\Fields\SkuPriceListField.cs" />
-    <Compile Include="Product\Models\ExternalPopularity.cs" />
-    <Compile Include="Product\Models\CompetitorSku.cs" />
-    <Compile Include="Product\Models\Info.cs" />
-    <Compile Include="Product\Models\ParametricValueList.cs" />
-    <Compile Include="Product\Models\DeliveryMethod.cs" />
-    <Compile Include="Product\Models\VariantDefinitionCulture.cs" />
-    <Compile Include="Product\Models\VariantDefinition.cs" />
-    <Compile Include="Product\Models\ParametricValue.cs" />
-    <Compile Include="Product\Models\ParametricValueCulture.cs" />
-    <Compile Include="Product\Models\VariantDefinitionType.cs" />
-    <Compile Include="Product\Models\VariantDefinitionGroup.cs" />
-    <Compile Include="Product\Models\WarehouseLocation.cs" />
-    <Compile Include="Product\Models\WarehouseType.cs" />
-    <Compile Include="Product\Models\Warehouse.cs" />
-    <Compile Include="Product\Models\Product.cs" />
-    <Compile Include="Product\Models\ProductCulture.cs" />
-    <Compile Include="Product\Models\ProductFamily.cs" />
-    <Compile Include="Product\Models\Flag.cs" />
-    <Compile Include="Product\Models\Sku.cs" />
-    <Compile Include="Product\Models\SkuStructureItemPriceList.cs" />
-    <Compile Include="Product\Models\SkuStructureItem.cs" />
-    <Compile Include="Product\Models\SkuCulture.cs" />
-    <Compile Include="Product\Models\SkuOnhand.cs" />
-    <Compile Include="Product\Models\VatRate.cs" />
-    <Compile Include="Product\Models\SalesArea.cs" />
-    <Compile Include="Product\CompetitorSkuHeader.cs" />
-    <Compile Include="Product\SkuOnhandHeader.cs" />
-    <Compile Include="Product\PriceListHeader.cs" />
-    <Compile Include="Product\SkuPriceListHeader.cs" />
-    <Compile Include="Product\Models\SkuStatus.cs" />
-    <Compile Include="Product\Models\SkuType.cs" />
-    <Compile Include="Product\Fields\VariantCultureField.cs" />
-    <Compile Include="Product\Fields\VariantField.cs" />
-    <Compile Include="Product\IProductService.cs" />
-    <Compile Include="Product\Models\PriceList.cs" />
-    <Compile Include="Product\Models\ProductCategory.cs" />
-    <Compile Include="Product\Models\SkuPriceList.cs" />
-    <Compile Include="Product\Models\Variant.cs" />
-    <Compile Include="Product\Models\VariantCulture.cs" />
-    <Compile Include="Product\ProductHeader.cs" />
-    <Compile Include="Product\PartNoImage.cs" />
-    <Compile Include="Product\Models\UnitMeasurementType.cs" />
-    <Compile Include="Supplier\Models\SupplierProductInfo.cs" />
-    <Compile Include="Supplier\Fields\SupplierProductInfoField.cs" />
-    <Compile Include="Utils\EnumeratorStream.cs" />
-    <Compile Include="Header.cs" />
-    <Compile Include="Job\JobDto.cs" />
-    <Compile Include="Utils\MyRequest.cs" />
-    <Compile Include="Common\Image.cs" />
-    <Compile Include="Supplier\Models\SupplierOnHand.cs" />
-    <Compile Include="Request.cs" />
-    <Compile Include="Response.cs" />
-    <Compile Include="ResponseStatus.cs" />
-    <Compile Include="SerializationType.cs" />
-    <Compile Include="Supplier\ISupplierService.cs" />
-    <Compile Include="Supplier\Fields\SupplierOnHandField.cs" />
-    <Compile Include="Supplier\Models\SupplierPrice.cs" />
-    <Compile Include="Supplier\Fields\SupplierPriceField.cs" />
-    <Compile Include="Supplier\Models\SupplierProduct.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Supplier\Fields\SupplierProductField.cs" />
-    <Compile Include="Supplier\SupplierProductHeader.cs" />
-    <Compile Include="UnitOfMeasurementType.cs" />
-    <Compile Include="Utils\RestHelper.cs" />
-    <Compile Include="Utils\WebRequestExtensions.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <ItemGroup />
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netcoreapp2.0|AnyCPU'">
+    <DocumentationFile>bin\Debug\netcoreapp2.0\Enferno.Services.StormConnect.Contracts.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net45|AnyCPU'">
+    <DocumentationFile>bin\Debug\net45\Enferno.Services.StormConnect.Contracts.xml</DocumentationFile>
+  </PropertyGroup>
+
 </Project>

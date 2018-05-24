@@ -16,6 +16,8 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Fields
         [EnumMember]
         UniqueUrlName = 4,
         [EnumMember]
-        IsUniqueUrlNameManuallyMaintained = 5
+        IsUniqueUrlNameManuallyMaintained = 5,
+        [EnumMember]
+        UniqueUrlNameCreateOnly = 6
     }
 }

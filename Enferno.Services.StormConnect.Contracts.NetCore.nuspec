@@ -1,0 +1,26 @@
+﻿<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>Enferno.Services.StormConnect.Contracts.NetCore</id>
+    <version>2.3.0-beta</version>
+    <title>Enferno.Services.StormConnect.Contracts.NetCore</title>
+    <authors>Enferno AB</authors>
+    <owners>Enferno AB</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Contracts for Storm Connect for .NET Core.</description>
+    <releaseNotes>
+      Order:
+      - Initial version.
+    </releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>Enferno Services StormConnect Contracts NetCore</tags>
+    <dependencies>
+      <dependency id="Newtonsoft.Json" version="7.0.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="Enferno.Services.StormConnect.Contracts\bin\Debug\netcoreapp2.0\Enferno.Services.StormConnect.Contracts.dll" target="lib/net45" />
+    <file src="Enferno.Services.StormConnect.Contracts\bin\Debug\netcoreapp2.0\Enferno.Services.StormConnect.Contracts.pdb" target="lib/net45" />
+    <file src="Enferno.Services.StormConnect.Contracts\bin\Debug\netcoreapp2.0\Enferno.Services.StormConnect.Contracts.xml" target="lib/net45" />
+  </files>
+</package>

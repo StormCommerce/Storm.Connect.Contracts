@@ -11,7 +11,7 @@
 
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
-    <PackageReference Include="Enferno.Services.Contracts.Message" Version="1.1.0-beta3" />
+    <PackageReference Include="Enferno.Services.Contracts.Message" Version="1.1.0" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'net45'">

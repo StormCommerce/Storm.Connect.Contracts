@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>Enferno.Services.StormConnect.Contracts</id>
-    <version>2.3.3-beta</version>
+    <version>2.3.3-beta3</version>
     <title>Enferno.Services.StormConnect.Contracts</title>
     <authors>Enferno AB</authors>
     <owners>Enferno AB</owners>
@@ -10,6 +10,8 @@
     <description>Contracts for Storm Connect.</description>
     <releaseNotes>
       Product.Models.Flag: Added IsCreateOnly and IsLimitedUpdate to allow for individual update restrictions for product flags.
+      Order:
+        - Shipment contracts were added.
     </releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags>Enferno Services StormConnect Contracts</tags>

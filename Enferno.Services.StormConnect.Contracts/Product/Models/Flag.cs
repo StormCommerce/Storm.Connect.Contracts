@@ -12,5 +12,9 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Models
         public bool IsSet { get; set; }
         [DataMember]
         public DateTime? StopDate { get; set; }
+        [DataMember]
+        public bool? IsCreateOnly { get; set; }
+        [DataMember]
+        public bool? IsLimitedUpdate { get; set; }
     }
 }

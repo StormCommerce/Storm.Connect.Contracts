@@ -19,7 +19,5 @@ namespace Enferno.Services.StormConnect.Contracts.Customer.Models
         public string Region { get; set; }
         [DataMember]
         public string CountryCode { get; set; }
-        [DataMember]
-        public string Gln { get; set; }
     }
 }

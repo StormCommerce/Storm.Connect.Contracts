@@ -19,5 +19,9 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         public string Comment { get; set; }
         [DataMember(Order = 6)]
         public Address ShipmentWarehouse { get; set; }
+        [DataMember(Order = 7)]
+        public string SourceWarehouseCode { get; set; }
+        [DataMember(Order = 8)]
+        public string TargetWarehouseCode { get; set; }
     }
 }

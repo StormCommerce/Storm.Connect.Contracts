@@ -21,5 +21,7 @@ namespace Enferno.Services.StormConnect.Contracts.Customer.Models
         public string CountryCode { get; set; }
         [DataMember]
         public string Gln { get; set; }
+        [DataMember]
+        public string ShippingPhoneNumber { get; set; }
     }
 }

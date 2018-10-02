@@ -10,5 +10,8 @@ namespace Enferno.Services.StormConnect.Contracts.Order
 
         [DataMember(Order = 2)]
         public string ErpOrderNo { get; set; }
+
+        [DataMember(Order = 3)]
+        public bool CancelPayment { get; set; }
     }
 }

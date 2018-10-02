@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>Enferno.Services.StormConnect.Contracts</id>
-    <version>2.3.6-beta</version>
+    <version>2.3.6-beta2</version>
     <title>Enferno.Services.StormConnect.Contracts</title>
     <authors>Enferno AB</authors>
     <owners>Enferno AB</owners>
@@ -10,6 +10,7 @@
     <description>Contracts for Storm Connect.</description>
     <releaseNotes>
       Customer/Company: Added ShippingPhoneNumber to delivery addresses
+      Order: Added ShippingPhoneNumber to Address and added CancelPayment to CancelOrderRequest
     </releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags>Enferno Services StormConnect Contracts</tags>

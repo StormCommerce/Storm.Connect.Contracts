@@ -7,8 +7,9 @@ namespace Enferno.Services.StormConnect.Contracts.Order
     {
         [DataMember(Order = 1)]
         public int ClientOrderRef { get; set; }
-
         [DataMember(Order = 2)]
         public string ErpOrderNo { get; set; }
+        [DataMember(Order = 3)]
+        public Payments Payments { get; set; }
     }
 }

@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>Enferno.Services.StormConnect.Contracts</id>
-    <version>2.3.7-beta</version>
+    <version>2.3.7-beta2</version>
     <title>Enferno.Services.StormConnect.Contracts</title>
     <authors>Enferno AB</authors>
     <owners>Enferno AB</owners>
@@ -10,6 +10,7 @@
     <description>Contracts for Storm Connect.</description>
     <releaseNotes>
       Product: Added CreateOnly and LimitedUpdate for Categories in ProductField.
+      Order: Added Payments to CancelOrderRequest, to allow for payment cancellation.
     </releaseNotes>
     <copyright>Copyright 2017</copyright>
     <tags>Enferno Services StormConnect Contracts</tags>

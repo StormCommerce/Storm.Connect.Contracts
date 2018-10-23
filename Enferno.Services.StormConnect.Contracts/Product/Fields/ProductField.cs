@@ -34,6 +34,10 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Fields
         [EnumMember]
         VariantDefinitionGroupCreateOnly = 13,
         [EnumMember]
-        Assortment = 14
+        Assortment = 14,
+        [EnumMember]
+        CategoriesCreateOnly = 15,
+        [EnumMember]
+        CategoriesLimitedUpdate = 16
     }
 }

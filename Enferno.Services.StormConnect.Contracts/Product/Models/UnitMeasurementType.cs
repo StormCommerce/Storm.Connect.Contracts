@@ -13,6 +13,11 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Models
         Kilogram = 3,
         [EnumMember]
         Litre = 4,
-
+        [EnumMember]
+        Pair = 5,
+        [EnumMember]
+        SquareMeter = 6,
+        [EnumMember]
+        Meter = 7
     }
 }

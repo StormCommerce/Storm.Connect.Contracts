@@ -64,5 +64,7 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         public string Country { get; set; }
         [DataMember(Order = 27)]
         public string GroupCode { get; set; }
+        [DataMember(Order = 28)]
+        public string Gln { get; set; }
     }
 }

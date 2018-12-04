@@ -25,6 +25,8 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         public string CareOf { get; set; }
         [DataMember(Order = 10)]
         public string ShippingPhoneNumber { get; set; }
+        [DataMember(Order = 11)]
+        public string Gln { get; set; }
 
         public virtual ExtensionDataObject ExtensionData { get; set; }
     }

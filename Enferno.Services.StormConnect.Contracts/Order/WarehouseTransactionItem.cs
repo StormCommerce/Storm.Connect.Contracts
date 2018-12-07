@@ -14,8 +14,8 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         [DataMember(Order = 4)]
         public decimal Amount { get; set; }
         [DataMember(Order = 5)]
-        public decimal RemainingQty { get; set; }
+        public decimal? RemainingQty { get; set; }
         [DataMember(Order = 6)]
-        public decimal RemainingAmount { get; set; }
+        public decimal? RemainingAmount { get; set; }
     }
 }

@@ -2,8 +2,8 @@
 
 namespace Enferno.Services.StormConnect.Contracts.Order
 {
-    [DataContract(Name = "Receipt", Namespace = "Enferno.Services.StormConnect.Contracts.Order")]
-    public class Receipt
+    [DataContract(Name = "ExternalOrder", Namespace = "Enferno.Services.StormConnect.Contracts.Order")]
+    public class ExternalOrder
     {
         [DataMember(Order = 1)]
         public Header Header { get; set; }
@@ -30,7 +30,7 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         [DataMember(Order = 12)]
         public ShippingAdvice ShippingAdvice { get; set; }
         [DataMember(Order = 13)]
-        public ReceiptItems Items { get; set; }
+        public OrderItems Items { get; set; }
         [DataMember(Order = 14)]
         public Fees Fees { get; set; }
         [DataMember(Order = 15)]

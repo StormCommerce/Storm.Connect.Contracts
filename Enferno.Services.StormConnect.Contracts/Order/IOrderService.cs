@@ -54,8 +54,8 @@ namespace Enferno.Services.StormConnect.Contracts.Order
 
 #if !NETCORE
         [OperationContract]
-        [WebInvoke(UriTemplate = "CreateReceipt")]
+        [WebInvoke(UriTemplate = "CreateExternalOrder")]
 #endif
-        void CreateReceipt(Receipt request);
+        void CreateExternalOrder(ExternalOrder request);
     }
 }

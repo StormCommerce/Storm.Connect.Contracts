@@ -29,12 +29,14 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         [DataMember(Order = 11)]
         public Invoices Invoices { get; set; }
         [DataMember(Order = 12)]
-        public ShippingAdvice ShippingAdvice { get; set; }
+        public string CurrencyCode { get; set; }
         [DataMember(Order = 13)]
-        public OrderItems Items { get; set; }
+        public ShippingAdvice ShippingAdvice { get; set; }
         [DataMember(Order = 14)]
-        public CodeValues AdditionalInfo { get; set; }
+        public OrderItems Items { get; set; }
         [DataMember(Order = 15)]
+        public CodeValues AdditionalInfo { get; set; }
+        [DataMember(Order = 16)]
         public string Source { get; set; }
         public virtual ExtensionDataObject ExtensionData { get; set; }
     }

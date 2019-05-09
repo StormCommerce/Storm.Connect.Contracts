@@ -66,5 +66,9 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         public string GroupCode { get; set; }
         [DataMember(Order = 28)]
         public string Gln { get; set; }
+        [DataMember(Order = 29)]
+        public string PaymentMethodCode { get; set; }
+        [DataMember(Order = 30)]
+        public string PaymentMethodName { get; set; }
     }
 }

@@ -3,6 +3,9 @@
     public enum OrderTypes
     {
         Order = 1,
-        Subscription = 2,
+        PurchaseOrder = 2,
+        RecurringOrder = 3,
+        RecurringOrderTemplate = 4,
+        ExternalOrder = 5
     }
 }

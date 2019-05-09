@@ -51,5 +51,11 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         [WebInvoke(UriTemplate = "CreateWarehouseTransaction")]
 #endif
         void CreateWarehouseTransaction(WarehouseTransaction warehouseTransaction);
+
+#if !NETCORE
+        [OperationContract]
+        [WebInvoke(UriTemplate = "CreateExternalOrder")]
+#endif
+        void CreateExternalOrder(ExternalOrder request);
     }
 }

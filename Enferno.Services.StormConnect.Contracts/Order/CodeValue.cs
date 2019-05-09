@@ -1,5 +1,5 @@
-﻿using System.Runtime.Serialization;
 using System;
+using System.Runtime.Serialization;
 using Enferno.Services.Contracts;
 
 namespace Enferno.Services.StormConnect.Contracts.Order

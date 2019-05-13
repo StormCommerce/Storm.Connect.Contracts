@@ -5,7 +5,7 @@ using Enferno.Services.StormConnect.Contracts.Common;
 namespace Enferno.Services.StormConnect.Contracts.Order
 {
     [DataContract(Name = "OrderRequest", Namespace = "Enferno.Services.StormConnect.Contracts.Order")]
-    public partial class OrderRequest : IExtensibleDataObject
+    public class OrderRequest : IExtensibleDataObject
     {
         [DataMember(Order = 1)]
         public ClientCustomer SellTo { get; set; }
@@ -51,6 +51,7 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         public OrderTypes OrderType { get; set; }
         [DataMember(Order = 22)]
         public string Source { get; set; }
+        public string CustomerInvoiceRef { get; set; }
         public virtual ExtensionDataObject ExtensionData { get; set; }
     }
 }

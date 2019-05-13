@@ -51,6 +51,7 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         public OrderTypes OrderType { get; set; }
         [DataMember(Order = 22)]
         public string Source { get; set; }
+        [DataMember(Order = 23)]
         public string CustomerInvoiceRef { get; set; }
         public virtual ExtensionDataObject ExtensionData { get; set; }
     }

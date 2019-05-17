@@ -19,24 +19,26 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         [DataMember(Order = 6)]
         public string SalesDivisionCode { get; set; }
         [DataMember(Order = 7)]
-        public string DeliveryDivisionCode { get; set; }
+        public string SalesContactCode { get; set; }
         [DataMember(Order = 8)]
-        public string ErpOrderNo { get; set; }
+        public string DeliveryDivisionCode { get; set; }
         [DataMember(Order = 9)]
-        public string CustomerOrderRef { get; set; }
+        public string ErpOrderNo { get; set; }
         [DataMember(Order = 10)]
-        public string CustomerOrderComment { get; set; }
+        public string CustomerOrderRef { get; set; }
         [DataMember(Order = 11)]
-        public Invoices Invoices { get; set; }
+        public string CustomerOrderComment { get; set; }
         [DataMember(Order = 12)]
-        public string CurrencyCode { get; set; }
+        public Invoices Invoices { get; set; }
         [DataMember(Order = 13)]
-        public ShippingAdvice ShippingAdvice { get; set; }
+        public string CurrencyCode { get; set; }
         [DataMember(Order = 14)]
-        public OrderItems Items { get; set; }
+        public ShippingAdvice ShippingAdvice { get; set; }
         [DataMember(Order = 15)]
-        public CodeValues AdditionalInfo { get; set; }
+        public OrderItems Items { get; set; }
         [DataMember(Order = 16)]
+        public CodeValues AdditionalInfo { get; set; }
+        [DataMember(Order = 17)]
         public string Source { get; set; }
         public virtual ExtensionDataObject ExtensionData { get; set; }
     }

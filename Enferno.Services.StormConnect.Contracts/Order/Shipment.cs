@@ -27,5 +27,18 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         public Address TargetWarehouseAddress { get; set; }
         [DataMember(Order = 10)]
         public ShipmentItems Items { get; set; }
+        [DataMember(Order = 11)]
+        public string CarrierName { get; set; }
+        [DataMember(Order = 12)]
+        public string CarrierReference { get; set; }
+        [DataMember(Order = 13)]
+        public string CarrierTrackingUrl { get; set; }
+        [DataMember(Order = 14)]
+        public string SenderName { get; set; }
+        [DataMember(Order = 15)]
+        public string ReceiverName { get; set; }
+        [DataMember(Order = 16)]
+        public string Barcode { get; set; }
+
     }
 }

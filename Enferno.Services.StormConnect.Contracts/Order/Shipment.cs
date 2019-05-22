@@ -39,6 +39,8 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         public string ReceiverName { get; set; }
         [DataMember(Order = 16)]
         public string Barcode { get; set; }
+        [DataMember(Order = 17)]
+        public ShipmentPackages ShipmentPackages { get; set; }
 
     }
 }

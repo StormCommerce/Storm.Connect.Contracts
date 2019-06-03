@@ -15,5 +15,7 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         public int Quantity { get; set; }
         [DataMember(Order = 5)]
         public decimal? Price { get; set; }
+        [DataMember(Order = 6)]
+        public string PackageNo { get; set; }
     }
 }

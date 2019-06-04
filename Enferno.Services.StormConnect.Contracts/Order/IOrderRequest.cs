@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Enferno.Services.StormConnect.Contracts.Order
 {
-    interface IOrderRequest
+    public interface IOrderRequest
     {
         Header Header { get; set; }
 

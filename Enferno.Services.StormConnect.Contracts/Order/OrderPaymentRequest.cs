@@ -5,7 +5,7 @@ using Enferno.Services.StormConnect.Contracts.Common;
 namespace Enferno.Services.StormConnect.Contracts.Order
 {
     [DataContract(Name = "OrderPaymentRequest", Namespace = "Enferno.Services.StormConnect.Contracts.Order")]
-    public class OrderPaymentRequest : IExtensibleDataObject
+    public class OrderPaymentRequest : IOrderRequest, IExtensibleDataObject
     {
         [DataMember(Order = 1)]
         public Header Header { get; set; }

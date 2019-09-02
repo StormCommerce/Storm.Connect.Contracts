@@ -46,5 +46,12 @@ namespace Enferno.Services.StormConnect.Contracts.Product
         [WebInvoke(UriTemplate = "ImportCompetitorSku")]
 #endif
         Response ImportCompetitorSkus(Request<CompetitorSkuHeader, Models.CompetitorSku> request);
+
+#if !NETCORE
+        [OperationContract]
+        [WebInvoke(UriTemplate = "ImportRelation")]
+#endif
+        Response ImportRelations(Request<RelationHeader, Models.Relation> request);
+
     }
 }

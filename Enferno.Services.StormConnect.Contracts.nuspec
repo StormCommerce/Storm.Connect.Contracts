@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>Enferno.Services.StormConnect.Contracts</id>
-    <version>2.7.0-beta</version>
+    <version>2.7.0-beta1</version>
     <title>Enferno.Services.StormConnect.Contracts</title>
     <authors>Storm Commerce AB</authors>
     <owners>Storm Commerce AB</owners>

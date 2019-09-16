@@ -45,5 +45,7 @@ namespace Enferno.Services.StormConnect.Contracts.Customer.Models
         public IEnumerable<Flag> Flags { get; set; }
         [DataMember]
         public IEnumerable<PriceList> PriceLists { get; set; }
+        [DataMember]
+        public IEnumerable<CompanyIdentifier> Companies { get; set; }
     }
 }

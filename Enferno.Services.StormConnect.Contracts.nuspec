@@ -8,7 +8,7 @@
     <owners>Storm Commerce AB</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Contracts for Storm Connect.</description>
-    <releaseNotes>Added AdditionalImagesCleanup to productfields and variantfields</releaseNotes>
+    <releaseNotes>Added AdditionalImageCleanup to Product and Variant</releaseNotes>
     <copyright>Copyright 2019</copyright>
     <tags>Enferno Services StormConnect Contracts</tags>
     <dependencies>

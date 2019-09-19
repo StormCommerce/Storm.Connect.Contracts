@@ -6,7 +6,7 @@ using Enferno.Services.StormConnect.Contracts.Common;
 namespace Enferno.Services.StormConnect.Contracts.Customer.Models
 {
     [DataContract(Name = "Company", Namespace = "Enferno.Services.StormConnect.Contracts.Customer.Models")]
-    public class Company
+    public class Company : ICompanyIdentifier
     {
         [DataMember]
         public Guid? ApplicationKey { get; set; }

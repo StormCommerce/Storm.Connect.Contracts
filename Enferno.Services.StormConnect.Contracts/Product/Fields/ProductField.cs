@@ -38,6 +38,8 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Fields
         [EnumMember]
         CategoriesCreateOnly = 15,
         [EnumMember]
-        CategoriesLimitedUpdate = 16
+        CategoriesLimitedUpdate = 16,
+        [EnumMember]
+        AdditionalImagesCleanup = 17
     }
 }

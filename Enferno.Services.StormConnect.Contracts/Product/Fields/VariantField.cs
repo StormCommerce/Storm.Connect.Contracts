@@ -32,6 +32,8 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Fields
         [EnumMember]
         DeliveryMethods = 12,
         [EnumMember]
-        DeliveryMethodsCreateOnly = 13       
+        DeliveryMethodsCreateOnly = 13,
+        [EnumMember]
+        AdditionalImagesCleanup = 14
     }
 }

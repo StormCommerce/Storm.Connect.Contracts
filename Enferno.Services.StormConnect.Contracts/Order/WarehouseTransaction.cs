@@ -29,7 +29,7 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         public string ReasonCode { get; set; }
         [DataMember(Order = 11)]
         public string Comment { get; set; }
-        [DataMember(Order = 11)]
+        [DataMember(Order = 12)]
         public WarehouseTransactionItems Items { get; set; }
     }
 }

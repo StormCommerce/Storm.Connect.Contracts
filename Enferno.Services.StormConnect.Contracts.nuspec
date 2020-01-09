@@ -8,7 +8,12 @@
     <owners>Storm Commerce AB</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Contracts for Storm Connect.</description>
-    <releaseNotes>Added AdditionalImagesCleanUp to Product and Variant</releaseNotes>
+    <releaseNotes>
+        Added AdditionalImagesCleanUp to Product and Variant
+        Added Companies to CustomerField
+        Created contracts for customer companies.
+        Added IsCompanyListDelta to customer.
+    </releaseNotes>
     <copyright>Copyright 2019</copyright>
     <tags>Enferno Services StormConnect Contracts</tags>
     <dependencies>

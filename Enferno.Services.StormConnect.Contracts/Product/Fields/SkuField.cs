@@ -8,7 +8,7 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Fields
         //[EnumMember]
         //PartNo,
         [EnumMember]
-        Status= 1,
+        Status = 1,
         [EnumMember]
         Type = 2,
         [EnumMember]
@@ -55,5 +55,7 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Fields
         StopDate = 24,
         [EnumMember]
         StructureItems = 25,
+        [EnumMember]
+        PartNoCreateWhenMissing = 26
     }
 }

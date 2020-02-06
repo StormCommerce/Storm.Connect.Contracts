@@ -15,9 +15,13 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Models
         [DataMember]
         public bool IsRelatedVariantUnique { get; set; }
         [DataMember]
+        public bool IsActive { get; set; }
+        [DataMember]
         public string RelationTypeCode { get; set; }
         [DataMember]
         public List<RelationCulture> Cultures { get; set; }
+        [DataMember] 
+        public int? SortOrder { get; set; }
 
     }
 }

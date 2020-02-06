@@ -7,14 +7,18 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Fields
     public enum RelationField
     {
         [EnumMember]
-        IsVariantUnique = 1,
+        IsActive = 1,
         [EnumMember]
-        IsVariantUniqueCreateOnly = 2,
+        IsVariantUnique = 2,
         [EnumMember]
-        IsRelatedVariantUnique = 3,
+        IsVariantUniqueCreateOnly = 3,
         [EnumMember]
-        IsRelatedVariantUniqueCreateOnly = 4,
+        IsRelatedVariantUnique = 4,
         [EnumMember]
-        Cultures = 5
+        IsRelatedVariantUniqueCreateOnly = 5,
+        [EnumMember]
+        Cultures = 6,
+        [EnumMember]
+        SortOrder = 7
     }
 }

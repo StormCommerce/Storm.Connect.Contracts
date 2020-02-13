@@ -19,6 +19,16 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Models
         [DataMember]
         public string RelationTypeCode { get; set; }
         [DataMember]
+        public string DefaultName { get; set; }
+        [DataMember]
+        public string DefaultSubHeader { get; set; }
+        [DataMember]
+        public string DefaultSubDescription { get; set; }
+        [DataMember]
+        public string DefaultDescriptionHeader { get; set; }
+        [DataMember]
+        public string DefaultDescription { get; set; }
+        [DataMember]
         public List<RelationCulture> Cultures { get; set; }
         [DataMember] 
         public int? SortOrder { get; set; }

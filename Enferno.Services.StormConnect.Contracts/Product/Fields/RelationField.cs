@@ -17,8 +17,18 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Fields
         [EnumMember]
         IsRelatedVariantUniqueCreateOnly = 5,
         [EnumMember]
-        Cultures = 6,
+        DefaultName = 6,
         [EnumMember]
-        SortOrder = 7
+        DefaultSubHeader = 7,
+        [EnumMember]
+        DefaultSubDescription = 8,
+        [EnumMember]
+        DefaultDescriptionHeader = 9,
+        [EnumMember]
+        DefaultDescription = 10,
+        [EnumMember]
+        Cultures = 11,
+        [EnumMember]
+        SortOrder = 12
     }
 }

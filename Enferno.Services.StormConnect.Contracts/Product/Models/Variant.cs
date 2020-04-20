@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 using Enferno.Services.StormConnect.Contracts.Common;
@@ -15,6 +16,8 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Models
         public int? StockDisplayBreakPoint { get; set; }
         [DataMember]
         public bool IsDangerousGoods { get; set; }
+        [DataMember]
+        public DateTime? TranslationRequested { get; set; }
         [DataMember]
         public List<VariantCulture> Cultures { get; set; }
         [DataMember]

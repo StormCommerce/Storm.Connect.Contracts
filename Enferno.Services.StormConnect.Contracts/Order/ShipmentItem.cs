@@ -13,9 +13,17 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         public string Name { get; set; }
         [DataMember(Order = 4)]
         public int Quantity { get; set; }
+        /// <summary>
+        /// Deprecated - Use PurchaseCost
+        /// </summary>
         [DataMember(Order = 5)]
         public decimal? Price { get; set; }
-        [DataMember(Order = 6)]
+
+        [DataMember(Order = 6)] 
+        public decimal? PurchaseCost { get; set; }
+        [DataMember(Order = 7)] 
+        public decimal? UnitCost { get; set; }
+        [DataMember(Order = 8)]
         public string PackageNo { get; set; }
     }
 }

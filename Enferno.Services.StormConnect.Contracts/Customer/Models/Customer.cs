@@ -49,5 +49,7 @@ namespace Enferno.Services.StormConnect.Contracts.Customer.Models
         public bool? IsCompanyListDelta { get; set; }
         [DataMember]
         public IEnumerable<CompanyIdentifier> Companies { get; set; }
+        [DataMember]
+        public string CrmId { get; set; }
     }
 }

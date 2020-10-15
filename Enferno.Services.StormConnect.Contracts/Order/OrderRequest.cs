@@ -53,6 +53,8 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         public string Source { get; set; }
         [DataMember(Order = 23)]
         public string CustomerInvoiceRef { get; set; }
+        [DataMember(Order = 24)]
+        public string DiscountCode { get; set; }
         public virtual ExtensionDataObject ExtensionData { get; set; }
     }
 }

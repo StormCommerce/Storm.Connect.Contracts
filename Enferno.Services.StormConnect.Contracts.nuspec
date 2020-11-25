@@ -8,7 +8,7 @@
     <owners>Storm Commerce AB</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Contracts for Storm Connect.</description>
-    <releaseNotes>Added a PspGiftCard SkuType</releaseNotes>
+    <releaseNotes>Added a Compensation SkuType</releaseNotes>
     <copyright>Copyright 2020</copyright>
     <tags>Enferno Services StormConnect Contracts</tags>
     <dependencies>

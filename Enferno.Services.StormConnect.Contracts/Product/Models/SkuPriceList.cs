@@ -29,5 +29,10 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Models
         public string CurrencyCode { get; set; }
         [DataMember]
         public bool? IsActive { get; set; }
+        [DataMember]
+        public PriceRule? PriceRule { get; set; }
+        [DataMember]
+        public decimal? PriceRuleValue { get; set; }
+
     }
 }

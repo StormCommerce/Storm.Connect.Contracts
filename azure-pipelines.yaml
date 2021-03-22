@@ -62,6 +62,7 @@ steps:
       versioningScheme: byEnvVar
       versionEnvVar: versionAndSuffix
       verbosityPack: 'Detailed'
+      buildProperties: "version=$(versionAndSuffix)"
 
   - task: PublishBuildArtifacts@1
     displayName: 'Publish Nuget Artifacts'

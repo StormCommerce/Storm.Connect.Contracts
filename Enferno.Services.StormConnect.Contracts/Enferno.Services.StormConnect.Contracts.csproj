@@ -10,7 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Enferno.Services.Contracts.Message" Version="1.1.1" />
+    <PackageReference Include="Enferno.Services.Contracts.Message" Version="1.2.3" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'net45'">

@@ -63,6 +63,7 @@ steps:
       versionEnvVar: versionAndSuffix
       verbosityPack: 'Detailed'
       buildProperties: "version=$(versionAndSuffix)"
+      arguments: "-p:SymbolPackageFormat=snupkg"
 
   - task: PublishBuildArtifacts@1
     displayName: 'Publish Nuget Artifacts'

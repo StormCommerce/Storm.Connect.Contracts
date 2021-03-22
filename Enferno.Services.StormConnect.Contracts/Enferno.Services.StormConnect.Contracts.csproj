@@ -28,11 +28,11 @@
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
   </ItemGroup>
 
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netcoreapp2.0|AnyCPU'">
-    <DocumentationFile>bin\Debug\netcoreapp2.0\Enferno.Services.StormConnect.Contracts.xml</DocumentationFile>
+  <PropertyGroup>
+    <DocumentationFile>bin\$(Configuration)\netcoreapp2.0\Enferno.Services.StormConnect.Contracts.xml</DocumentationFile>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net45|AnyCPU'">
-    <DocumentationFile>bin\Debug\net45\Enferno.Services.StormConnect.Contracts.xml</DocumentationFile>
+  <PropertyGroup>
+    <DocumentationFile>bin\$(Configuration)\net45\Enferno.Services.StormConnect.Contracts.xml</DocumentationFile>
   </PropertyGroup>
 
 </Project>

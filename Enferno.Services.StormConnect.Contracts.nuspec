@@ -23,12 +23,12 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="Enferno.Services.StormConnect.Contracts\bin\Debug\net45\Enferno.Services.StormConnect.Contracts.dll" target="lib/net45" />
-    <file src="Enferno.Services.StormConnect.Contracts\bin\Debug\net45\Enferno.Services.StormConnect.Contracts.pdb" target="lib/net45" />
-    <file src="Enferno.Services.StormConnect.Contracts\bin\Debug\net45\Enferno.Services.StormConnect.Contracts.xml" target="lib/net45" />
-    <file src="Enferno.Services.StormConnect.Contracts\bin\Debug\netcoreapp2.0\Enferno.Services.StormConnect.Contracts.dll" target="lib/netcoreapp2.0" />
-    <file src="Enferno.Services.StormConnect.Contracts\bin\Debug\netcoreapp2.0\Enferno.Services.StormConnect.Contracts.pdb" target="lib/netcoreapp2.0" />
-    <file src="Enferno.Services.StormConnect.Contracts\bin\Debug\netcoreapp2.0\Enferno.Services.StormConnect.Contracts.xml" target="lib/netcoreapp2.0" />
+    <file src="Enferno.Services.StormConnect.Contracts\bin\$configuration$\net45\Enferno.Services.StormConnect.Contracts.dll" target="lib/net45" />
+    <file src="Enferno.Services.StormConnect.Contracts\bin\$configuration$\net45\Enferno.Services.StormConnect.Contracts.pdb" target="lib/net45" />
+    <file src="Enferno.Services.StormConnect.Contracts\bin\$configuration$\net45\Enferno.Services.StormConnect.Contracts.xml" target="lib/net45" />
+    <file src="Enferno.Services.StormConnect.Contracts\bin\$configuration$\netcoreapp2.0\Enferno.Services.StormConnect.Contracts.dll" target="lib/netcoreapp2.0" />
+    <file src="Enferno.Services.StormConnect.Contracts\bin\$configuration$\netcoreapp2.0\Enferno.Services.StormConnect.Contracts.pdb" target="lib/netcoreapp2.0" />
+    <file src="Enferno.Services.StormConnect.Contracts\bin\$configuration$\netcoreapp2.0\Enferno.Services.StormConnect.Contracts.xml" target="lib/netcoreapp2.0" />
   </files>
 </package>
 

@@ -14,10 +14,10 @@ variables:
   buildPlatform: 'Any CPU'
   majorMinorVersion: 2.8
   semanticVersion: $[counter(variables['majorMinorVersion'], 0)]
-  ${{ if eq(variables['Build.SourceBranchName'], 'production') }}:
+  ${{ if eq(variables['Build.SourceBranchName'], 'master') }}:
     versionSuffix: ''
     buildConfiguration: 'Release'
-  ${{ if ne(variables['Build.SourceBranchName'], 'production') }}:
+  ${{ if ne(variables['Build.SourceBranchName'], 'master') }}:
     versionSuffix: '-beta'
     buildConfiguration: 'Debug'
   version: $(majorMinorVersion).$(semanticVersion)

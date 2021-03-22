@@ -55,7 +55,7 @@ steps:
   - task: NuGetCommand@2
     displayName: Nuget Pack
     inputs:
-      command: 'pack'
+      command: 'custom'
       packDestination: '$(Build.ArtifactStagingDirectory)\nugets'
       packagesToPack: '*.nuspec'
       includesymbols: true
@@ -63,7 +63,7 @@ steps:
       versionEnvVar: versionAndSuffix
       verbosityPack: 'Detailed'
       buildProperties: "version=$(versionAndSuffix)"
-      arguments: "-p:SymbolPackageFormat=snupkg"
+      arguments: "pack -Properties Configuration=$(buildConfiguration);version=$(versionAndSuffix) -Symbols -version $(versionAndSuffix) -Verbosity Detailed /p:SymbolPackageFormat=snupkg"
 
   - task: PublishBuildArtifacts@1
     displayName: 'Publish Nuget Artifacts'

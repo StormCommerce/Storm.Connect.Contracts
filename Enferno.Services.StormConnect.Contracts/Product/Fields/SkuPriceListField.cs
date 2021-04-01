@@ -28,6 +28,8 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Fields
         [EnumMember]
         IsActive = 10,
         [EnumMember]
-        IsPriceDiscountableCreateOnly = 11
+        IsPriceDiscountableCreateOnly = 11,
+        [EnumMember]
+        PriceRule = 12
     }
 }

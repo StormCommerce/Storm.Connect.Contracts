@@ -26,7 +26,10 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Models
         [DataMember]
         public IEnumerable<Warehouse> Warehouses { get; set; }
         [DataMember]
+        [Obsolete]
         public string DefaultPriceRuleCode { get; set; }
+        [DataMember]
+        public PriceRule DefaultPriceRule { get; set; }
         [DataMember]
         public decimal? DefaultPriceRuleValue { get; set; }
         [DataMember]

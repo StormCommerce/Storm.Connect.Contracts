@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Runtime.Serialization;
+using System.Text;
 using Enferno.Services.Contracts;
 
 namespace Enferno.Services.StormConnect.Contracts.Order
@@ -72,5 +73,7 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         public string PaymentMethodName { get; set; }
         [DataMember(Order = 31)]
         public bool SuppressPspCall { get; set; }
+        [DataMember(Order = 32)]
+        public string CultureCode { get; set; }
     }
 }

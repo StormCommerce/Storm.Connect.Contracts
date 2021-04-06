@@ -72,5 +72,7 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         public string PaymentMethodName { get; set; }
         [DataMember(Order = 31)]
         public bool SuppressPspCall { get; set; }
+        [DataMember(Order = 32)]
+        public string CultureCode { get; set; }
     }
 }

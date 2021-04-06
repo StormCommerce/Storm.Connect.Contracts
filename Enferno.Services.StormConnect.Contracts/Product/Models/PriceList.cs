@@ -29,7 +29,7 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Models
         [Obsolete]
         public string DefaultPriceRuleCode { get; set; }
         [DataMember]
-        public PriceRule DefaultPriceRule { get; set; }
+        public PriceRule? DefaultPriceRule { get; set; }
         [DataMember]
         public decimal? DefaultPriceRuleValue { get; set; }
         [DataMember]

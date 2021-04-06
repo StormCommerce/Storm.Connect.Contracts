@@ -18,5 +18,7 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         public string CurrencyCode { get; set; }
         [DataMember(Order = 6)]
         public CodeValues AdditionalInfo { get; set; }
+        [DataMember(Order = 7)]
+        public string PaymentName { get; set; }
     }
 }

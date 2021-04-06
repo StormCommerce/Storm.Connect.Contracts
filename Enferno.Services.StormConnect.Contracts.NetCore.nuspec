@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>Enferno.Services.StormConnect.Contracts.NetCore</id>
-    <version>2.3.0-beta</version>
+    <version>$version$</version>
     <title>Enferno.Services.StormConnect.Contracts.NetCore</title>
     <authors>Enferno AB</authors>
     <owners>Enferno AB</owners>
@@ -19,8 +19,8 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="Enferno.Services.StormConnect.Contracts\bin\Debug\netcoreapp2.0\Enferno.Services.StormConnect.Contracts.dll" target="lib/net45" />
-    <file src="Enferno.Services.StormConnect.Contracts\bin\Debug\netcoreapp2.0\Enferno.Services.StormConnect.Contracts.pdb" target="lib/net45" />
-    <file src="Enferno.Services.StormConnect.Contracts\bin\Debug\netcoreapp2.0\Enferno.Services.StormConnect.Contracts.xml" target="lib/net45" />
+    <file src="Enferno.Services.StormConnect.Contracts\bin\$configuration$\netcoreapp2.0\Enferno.Services.StormConnect.Contracts.dll" target="lib/net45" />
+    <file src="Enferno.Services.StormConnect.Contracts\bin\$configuration$\netcoreapp2.0\Enferno.Services.StormConnect.Contracts.pdb" target="lib/net45" />
+    <file src="Enferno.Services.StormConnect.Contracts\bin\$configuration$\netcoreapp2.0\Enferno.Services.StormConnect.Contracts.xml" target="lib/net45" />
   </files>
 </package>

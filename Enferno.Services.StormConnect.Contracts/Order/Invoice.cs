@@ -74,5 +74,7 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         public bool SuppressPspCall { get; set; }
         [DataMember(Order = 32)]
         public string CultureCode { get; set; }
+        [DataMember(Order = 33)]
+        public string CountryCode { get; set; }
     }
 }

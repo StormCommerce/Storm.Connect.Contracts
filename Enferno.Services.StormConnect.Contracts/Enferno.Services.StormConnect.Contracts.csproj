@@ -1,21 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
-    <NoWarn>CS1591</NoWarn>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <NoWarn>CS1591</NoWarn>
+    </PropertyGroup>
 
-  <PropertyGroup>
-    <DefineConstants>NETCORE</DefineConstants>
-  </PropertyGroup>
+    <PropertyGroup>
+        <DefineConstants>NETCORE</DefineConstants>
+    </PropertyGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Enferno.Services.Contracts.Message" Version="2.0.9-beta" />
-    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
-  </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Enferno.Services.Contracts.Message" Version="2.0.9-beta"/>
+        <PackageReference Include="Newtonsoft.Json" Version="11.0.2"/>
+    </ItemGroup>
 
-  <PropertyGroup>
-    <DocumentationFile>bin\$(Configuration)\netstandard2.0\Enferno.Services.StormConnect.Contracts.xml</DocumentationFile>
-  </PropertyGroup>
+    <PropertyGroup>
+        <DocumentationFile>bin\$(Configuration)\netstandard2.0\Enferno.Services.StormConnect.Contracts.xml</DocumentationFile>
+    </PropertyGroup>
 
 </Project>

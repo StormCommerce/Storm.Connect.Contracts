@@ -1,38 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netcoreapp2.0;net45</TargetFrameworks>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <NoWarn>CS1591</NoWarn>
   </PropertyGroup>
 
-  <PropertyGroup Condition="'$(TargetFramework)' == 'netcoreapp2.0'">
+  <PropertyGroup>
     <DefineConstants>NETCORE</DefineConstants>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Enferno.Services.Contracts.Message" Version="1.2.6" />
-  </ItemGroup>
-
-  <ItemGroup Condition="'$(TargetFramework)' == 'net45'">
-
-    <Reference Include="System.ServiceModel" />
-    <Reference Include="System.ServiceModel.Web" />
-    <Reference Include="System.Web" />
-
-    <PackageReference Include="System.Net.Http" Version="4.3.3" />
-    <PackageReference Include="Newtonsoft.Json" Version="7.0.1" />
-
-  </ItemGroup>
-
-  <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp2.0'">
+    <PackageReference Include="Enferno.Services.Contracts.Message" Version="2.0.9-beta" />
     <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
   </ItemGroup>
 
   <PropertyGroup>
-    <DocumentationFile>bin\$(Configuration)\netcoreapp2.0\Enferno.Services.StormConnect.Contracts.xml</DocumentationFile>
-  </PropertyGroup>
-  <PropertyGroup>
-    <DocumentationFile>bin\$(Configuration)\net45\Enferno.Services.StormConnect.Contracts.xml</DocumentationFile>
+    <DocumentationFile>bin\$(Configuration)\netstandard2.0\Enferno.Services.StormConnect.Contracts.xml</DocumentationFile>
   </PropertyGroup>
 
 </Project>

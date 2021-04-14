@@ -8,27 +8,20 @@
     <owners>Storm Commerce AB</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Contracts for Storm Connect.</description>
-    <releaseNotes>Changed contract for orderrequest payment.</releaseNotes>
+    <releaseNotes>Upgrade to netstandard2.0</releaseNotes>
     <copyright>Copyright 2020</copyright>
     <tags>Enferno Services StormConnect Contracts</tags>
     <dependencies>
-      <group targetFramework="net45">
-        <dependency id="Newtonsoft.Json" version="7.0.1" />
-        <dependency id="Enferno.Services.Contracts.Message" version="1.2.3" />
-      </group>
-      <group targetFramework="netcoreapp2.0">
+      <group targetFramework="netstandard2.0">
         <dependency id="Newtonsoft.Json" version="11.0.2" />
-        <dependency id="Enferno.Services.Contracts.Message" version="1.2.3" />
+        <dependency id="Enferno.Services.Contracts.Message" version="1.2.6" />
       </group>
     </dependencies>
   </metadata>
   <files>
-    <file src="Enferno.Services.StormConnect.Contracts\bin\$configuration$\net45\Enferno.Services.StormConnect.Contracts.dll" target="lib/net45" />
-    <file src="Enferno.Services.StormConnect.Contracts\bin\$configuration$\net45\Enferno.Services.StormConnect.Contracts.pdb" target="lib/net45" />
-    <file src="Enferno.Services.StormConnect.Contracts\bin\$configuration$\net45\Enferno.Services.StormConnect.Contracts.xml" target="lib/net45" />
-    <file src="Enferno.Services.StormConnect.Contracts\bin\$configuration$\netcoreapp2.0\Enferno.Services.StormConnect.Contracts.dll" target="lib/netcoreapp2.0" />
-    <file src="Enferno.Services.StormConnect.Contracts\bin\$configuration$\netcoreapp2.0\Enferno.Services.StormConnect.Contracts.pdb" target="lib/netcoreapp2.0" />
-    <file src="Enferno.Services.StormConnect.Contracts\bin\$configuration$\netcoreapp2.0\Enferno.Services.StormConnect.Contracts.xml" target="lib/netcoreapp2.0" />
+    <file src="Enferno.Services.StormConnect.Contracts\bin\$configuration$\netstandard2.0\Enferno.Services.StormConnect.Contracts.dll" target="lib/netstandard2.0" />
+    <file src="Enferno.Services.StormConnect.Contracts\bin\$configuration$\netstandard2.0\Enferno.Services.StormConnect.Contracts.pdb" target="lib/netstandard2.0" />
+    <file src="Enferno.Services.StormConnect.Contracts\bin\$configuration$\netstandard2.0\Enferno.Services.StormConnect.Contracts.xml" target="lib/netstandard2.0" />
   </files>
 </package>
 

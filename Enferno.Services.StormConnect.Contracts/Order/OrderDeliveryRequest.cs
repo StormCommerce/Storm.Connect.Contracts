@@ -11,7 +11,7 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         [DataMember(Order = 1)]
         public int OrderDeliveryId { get; set; }
         [DataMember(Order = 2)]
-        public int OrderId { get; set; }
+        public long OrderId { get; set; }
         [DataMember(Order = 3)]
         public int WarehouseId { get; set; }
         [DataMember(Order = 4)]

@@ -24,5 +24,7 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         public string PluginName { get; set; }
         [DataMember(Order = 8)]
         public List<OrderDeliveryItem> OrderDeliveryItems { get; set; }
+        [DataMember(Order = 9)]
+        public Guid? ApplicationKey { get; set; }
     }
 }

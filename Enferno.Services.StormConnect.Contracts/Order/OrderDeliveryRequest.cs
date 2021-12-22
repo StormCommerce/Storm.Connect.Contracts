@@ -26,5 +26,7 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         public List<OrderDeliveryItem> OrderDeliveryItems { get; set; }
         [DataMember(Order = 9)]
         public int ApplicationId { get; set; }
+        [DataMember(Order = 10)]
+        public string ErpOrderNo { get; set; }
     }
 }

@@ -8,7 +8,7 @@
     <owners>Storm Commerce AB</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Contracts for Storm Connect.</description>
-    <releaseNotes>Changed contract for orderrequest payment.</releaseNotes>
+    <releaseNotes>Added ManagedErpPackage and ManagedErpPackageWithCalc sku types.</releaseNotes>
     <copyright>Copyright 2020</copyright>
     <tags>Enferno Services StormConnect Contracts</tags>
     <dependencies>

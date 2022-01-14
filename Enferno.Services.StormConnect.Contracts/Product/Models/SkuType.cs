@@ -25,6 +25,8 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Models
         [EnumMember] Standard2 = 30,
         [EnumMember] License = 33,
         [EnumMember] ManagedStructure = 37,
+        [EnumMember] ManagedErpPackage = 38,
+        [EnumMember] ManagedErpPackageWithCalc = 39,
         [EnumMember] PspGiftCard = 41,
         [EnumMember] Compensation = 44
     }

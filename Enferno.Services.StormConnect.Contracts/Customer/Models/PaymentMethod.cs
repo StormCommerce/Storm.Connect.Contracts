@@ -9,5 +9,7 @@ namespace Enferno.Services.StormConnect.Contracts.Customer.Models
         public string Code { get; set; }
         [DataMember]
         public bool? IsActive { get; set; }
+        [DataMember]
+        public string InvoiceCaptureCode { get; set; }
     }
 }

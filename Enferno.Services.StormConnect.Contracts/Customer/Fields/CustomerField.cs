@@ -46,6 +46,8 @@ namespace Enferno.Services.StormConnect.Contracts.Customer.Fields
         [EnumMember]
         Companies = 19,
         [EnumMember]
-        CrmId = 20
+        CrmId = 20,
+        [EnumMember]
+        PreserveFlags = 21
     }
 }

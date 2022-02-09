@@ -1,4 +1,5 @@
-﻿using System.Runtime.Serialization;
+﻿using System;
+using System.Runtime.Serialization;
 
 namespace Enferno.Services.StormConnect.Contracts.Customer.Models
 {
@@ -9,5 +10,12 @@ namespace Enferno.Services.StormConnect.Contracts.Customer.Models
         public string Code { get; set; }
         [DataMember]
         public bool? IsActive { get; set; }
+        [DataMember]
+        public DateTime? StopDate { get; set; }
+        [DataMember] 
+        public bool? IsCreateOnly { get; set; }
+        [DataMember] 
+        public bool? IsLimitedUpdate { get; set; }
+
     }
 }

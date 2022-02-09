@@ -48,6 +48,8 @@ namespace Enferno.Services.StormConnect.Contracts.Customer.Fields
         [EnumMember]
         SearchOnlyByCode = 20,
         [EnumMember]
-        VatNo = 21
+        VatNo = 21,
+        [EnumMember]
+        PreserveFlags = 22
     }
 }

@@ -9,5 +9,7 @@ namespace Enferno.Services.StormConnect.Contracts.Customer.Models
         Category = 1,
         [EnumMember]
         ProductDiscountClass = 2,
+        [EnumMember]
+        ProductFlag = 3,
     }
 }

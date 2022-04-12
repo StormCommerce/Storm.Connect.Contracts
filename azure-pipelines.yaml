@@ -1,3 +1,5 @@
+name: StormCommerce.Storm.Connect.Contracts - $(majorMinorVersion).$(semanticVersion)$(versionSuffix)
+
 trigger:
   - production
   - master

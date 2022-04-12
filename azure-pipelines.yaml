@@ -1,8 +1,9 @@
 trigger:
   - production
   - master
+  - qa
   - feature/*
-  - hotfix/*
+  - bugfix/*
 
 pool:
   vmImage: 'windows-latest'
@@ -10,12 +11,15 @@ pool:
 variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
-  majorMinorVersion: 2.8  
+  majorMinorVersion: 2.9.0  
   semanticVersion: $[counter(variables['majorMinorVersion'], 0)]
-  ${{ if eq(variables['Build.SourceBranchName'], 'master') }}:
+  ${{ if eq(variables['Build.SourceBranchName'], 'production') }}:
     versionSuffix: ''
     buildConfiguration: 'Release'
-  ${{ if ne(variables['Build.SourceBranchName'], 'master') }}:
+  ${{ if eq(variables['Build.SourceBranchName'], 'qa')}}:
+    versionSuffix: '-rc'
+    buildConfiguration: 'Debug'
+  ${{ if and(ne(variables['Build.SourceBranchName'], 'production'), ne(variables['Build.SourceBranchName'], 'qa'))}}:
     versionSuffix: '-beta'
     buildConfiguration: 'Debug'
   version: $(majorMinorVersion).$(semanticVersion)

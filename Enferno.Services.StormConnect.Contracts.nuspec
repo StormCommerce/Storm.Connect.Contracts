@@ -8,12 +8,12 @@
     <owners>Storm Commerce AB</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Contracts for Storm Connect.</description>
-    <releaseNotes>Added ManagedErpPackage and ManagedErpPackageWithCalc sku types.</releaseNotes>
+    <releaseNotes>Added sku types.</releaseNotes>
     <copyright>Copyright 2020</copyright>
     <tags>Enferno Services StormConnect Contracts</tags>
     <dependencies>
       <group targetFramework="net45">
-        <dependency id="Newtonsoft.Json" version="7.0.1" />
+        <dependency id="Newtonsoft.Json" version="13.0.2" />
         <dependency id="Enferno.Services.Contracts.Message" version="1.2.3" />
       </group>
       <group targetFramework="netcoreapp2.0">

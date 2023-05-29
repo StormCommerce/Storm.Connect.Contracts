@@ -24,8 +24,10 @@ namespace Enferno.Services.StormConnect.Contracts.Customer.Models
         [DataMember]
         public string ShippingPhoneNumber { get; set; }
         [DataMember]
-        public bool IsPrimary { get; set; }
+        public bool? IsPrimary { get; set; }
         [DataMember]
         public string Code { get; set; }
+        [DataMember]
+        public bool? IsValidated { get; set; }
     }
 }

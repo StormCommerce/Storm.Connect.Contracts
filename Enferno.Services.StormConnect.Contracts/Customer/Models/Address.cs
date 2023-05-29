@@ -23,5 +23,9 @@ namespace Enferno.Services.StormConnect.Contracts.Customer.Models
         public string Gln { get; set; }
         [DataMember]
         public string ShippingPhoneNumber { get; set; }
+        [DataMember]
+        public bool IsPrimary { get; set; }
+        [DataMember]
+        public string Code { get; set; }
     }
 }

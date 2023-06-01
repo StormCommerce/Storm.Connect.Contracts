@@ -52,5 +52,7 @@ namespace Enferno.Services.StormConnect.Contracts.Customer.Models
         public IEnumerable<PriceList> PriceLists { get; set; }
         [DataMember]
         public string VatNo { get; set; }
+        [DataMember]
+        public bool? UseInvoiceAddressAsDeliveryAddress { get; set; }
     }
 }

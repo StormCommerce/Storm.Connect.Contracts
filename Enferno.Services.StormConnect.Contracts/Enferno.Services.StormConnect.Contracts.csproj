@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netcoreapp2.0;net45</TargetFrameworks>
+    <TargetFrameworks>netcoreapp2.0;net462</TargetFrameworks>
     <NoWarn>CS1591</NoWarn>
   </PropertyGroup>
 
@@ -13,7 +13,7 @@
     <PackageReference Include="Enferno.Services.Contracts.Message" Version="1.2.6" />
   </ItemGroup>
 
-  <ItemGroup Condition="'$(TargetFramework)' == 'net45'">
+  <ItemGroup Condition="'$(TargetFramework)' == 'net462'">
 
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.ServiceModel.Web" />
@@ -32,7 +32,7 @@
     <DocumentationFile>bin\$(Configuration)\netcoreapp2.0\Enferno.Services.StormConnect.Contracts.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
-    <DocumentationFile>bin\$(Configuration)\net45\Enferno.Services.StormConnect.Contracts.xml</DocumentationFile>
+    <DocumentationFile>bin\$(Configuration)\net462\Enferno.Services.StormConnect.Contracts.xml</DocumentationFile>
   </PropertyGroup>
 
 </Project>

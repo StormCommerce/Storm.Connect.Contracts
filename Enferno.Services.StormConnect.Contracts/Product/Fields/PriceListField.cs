@@ -28,6 +28,8 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Fields
         [EnumMember]
         IsErpIntegrated = 10,
         [EnumMember]
-        DoNotCreateApplicationPriceList = 11
+        DoNotCreateApplicationPriceList = 11,
+        [EnumMember]
+        SalesArea = 12
     }
 }

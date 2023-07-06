@@ -51,6 +51,6 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Models
         public bool IsErpIntegrated { get; set; }
 
         [DataMember]
-        public SalesArea SalesArea { get; set; }
+        public SalesArea? SalesArea { get; set; }
     }
 }

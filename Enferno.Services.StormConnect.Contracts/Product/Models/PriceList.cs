@@ -52,5 +52,20 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Models
 
         [DataMember]
         public SalesArea? SalesArea { get; set; }
+
+        [DataMember]
+        public decimal? DefaultMinMarginPercent { get; set; }
+
+        [DataMember]
+        public bool? LimitToRecPrice { get; set; }
+
+        [DataMember]
+        public string ParentPriceListCode { get; set; }
+
+        [DataMember]
+        public decimal? DefaultSupplementalChargeFixed { get; set; }
+
+        [DataMember]
+        public decimal DefaultSupplementalChargePercent { get; set; }
     }
 }

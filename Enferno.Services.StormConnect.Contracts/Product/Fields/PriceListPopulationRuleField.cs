@@ -8,6 +8,6 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Fields
         [EnumMember] ManufacturerCode = 0,
         [EnumMember] CategoryCode = 1,
         [EnumMember] Flags = 2,
-        [EnumMember] SupplierRequired = 3,
+        [EnumMember] SupplierRequired = 3
     }
 }

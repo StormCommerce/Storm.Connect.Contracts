@@ -66,6 +66,15 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Models
         public decimal? DefaultSupplementalChargeFixed { get; set; }
 
         [DataMember]
-        public decimal DefaultSupplementalChargePercent { get; set; }
+        public decimal? DefaultSupplementalChargePercent { get; set; }
+
+        [DataMember]
+        public IEnumerable<PriceListPriceRule> PriceRules { get; set; }
+
+        [DataMember]
+        public PopulationRulesType? PopulationRulesType { get; set; }
+
+        [DataMember]
+        public IEnumerable<PriceListPopulationRule> PopulationRules { get; set; }
     }
 }

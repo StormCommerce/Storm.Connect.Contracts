@@ -12,12 +12,23 @@ namespace Enferno.Services.StormConnect.Contracts.Product
             PriceListFieldsThatAreSet = new List<PriceListField>();
             WarehouseFieldsThatAreSet = new List<WarehouseField>();
             WarehouseLocationFieldsThatAreSet = new List<WarehouseLocationField>();
+            PriceListPriceRuleFieldsThatAreSet = new List<PriceListPriceRuleField>();
+            PriceListPopulationRuleFieldsThatAreSet = new List<PriceListPopulationRuleField>();
         }
+
         [DataMember]
         public IList<PriceListField> PriceListFieldsThatAreSet { get; set; }
+
         [DataMember]
         public IList<WarehouseField> WarehouseFieldsThatAreSet { get; set; }
+
         [DataMember]
         public IList<WarehouseLocationField> WarehouseLocationFieldsThatAreSet { get; set; }
+
+        [DataMember]
+        public IList<PriceListPriceRuleField> PriceListPriceRuleFieldsThatAreSet { get; set; }
+
+        [DataMember]
+        public IList<PriceListPopulationRuleField> PriceListPopulationRuleFieldsThatAreSet { get; set; }
     }
 }

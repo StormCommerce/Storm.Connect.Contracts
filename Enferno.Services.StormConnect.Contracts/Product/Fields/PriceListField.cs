@@ -24,7 +24,10 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Fields
         [EnumMember] DefaultSupplementalChargeFixed = 16,
         [EnumMember] DefaultSupplementalChargePercent = 17,
         [EnumMember] PriceRules = 18,
-        [EnumMember] PopulationRulesType = 19,
-        [EnumMember] PopulationRules = 20
+        [EnumMember] PriceRulesCleanup = 19,
+        [EnumMember] PriceRulesLimitedUpdate = 20,
+        [EnumMember] PopulationRulesType = 21,
+        [EnumMember] PopulationRules = 22,
+        [EnumMember] PopulationRulesCleanup = 23
     }
 }

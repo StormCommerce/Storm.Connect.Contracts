@@ -72,9 +72,6 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Models
         public IEnumerable<PriceListPriceRule> PriceRules { get; set; }
 
         [DataMember]
-        public PopulationRulesType? PopulationRulesType { get; set; }
-
-        [DataMember]
-        public IEnumerable<PriceListPopulationRule> PopulationRules { get; set; }
+        public PriceListPopulation Population { get; set; }
     }
 }

@@ -6,10 +6,10 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Models
     [DataContract(Name = "PriceListPopulationAllCategories", Namespace = "Enferno.Services.StormConnect.Contracts.Product.Models")]
     public class PriceListPopulationAllCategories
     {
-        [DataMember]
+        [DataMember(IsRequired = true)]
         public PriceListPopulationAllCategoriesRule Rule { get; set; }
 
         [DataMember]
-        public IEnumerable<string> RuleCodes { get; set; }
+        public IEnumerable<string> RuleCodes { get; set; } = new List<string>();
     }
 }

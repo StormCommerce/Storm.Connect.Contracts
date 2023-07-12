@@ -7,7 +7,7 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Models
     public class PriceListPopulation
     {
         [DataMember]
-        public PriceListPopulationType Type { get; set; }
+        public PriceListPopulationType Type { get; set; } = PriceListPopulationType.Exclude;
 
         [DataMember]
         public PriceListPopulationAllCategories AllCategories { get; set; }

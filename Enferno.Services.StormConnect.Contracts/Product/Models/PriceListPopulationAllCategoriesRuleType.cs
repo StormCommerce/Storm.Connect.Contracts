@@ -3,7 +3,7 @@
 namespace Enferno.Services.StormConnect.Contracts.Product.Models
 {
     [DataContract(Name = "PriceListPopulationAllCategoriesRule", Namespace = "Enferno.Services.StormConnect.Contracts.Product.Models")]
-    public enum PriceListPopulationAllCategoriesRule
+    public enum PriceListPopulationAllCategoriesRuleType
     {
         [EnumMember] None = 1,
         [EnumMember] Manufacturers = 2,

@@ -16,6 +16,6 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Models
         public IEnumerable<PriceListPopulationCategory> Categories { get; set; } = new List<PriceListPopulationCategory>();
 
         [DataMember]
-        public bool? RequiredSupplier { get; set; }
+        public bool? RequireSupplier { get; set; }
     }
 }

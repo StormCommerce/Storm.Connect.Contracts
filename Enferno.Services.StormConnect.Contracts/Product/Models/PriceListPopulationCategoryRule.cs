@@ -5,8 +5,9 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Models
     [DataContract(Name = "PriceListPopulationCategoryRule", Namespace = "Enferno.Services.StormConnect.Contracts.Product.Models")]
     public enum PriceListPopulationCategoryRule
     {
-        [EnumMember] Manufacturers = 1,
-        [EnumMember] Flags = 2,
-        [EnumMember] Category = 3
+        [EnumMember] None = 1,
+        [EnumMember] Manufacturers = 2,
+        [EnumMember] Flags = 3,
+        [EnumMember] Category = 4
     }
 }

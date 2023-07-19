@@ -7,9 +7,9 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Models
     public class PriceListPopulationAllCategories
     {
         [DataMember(IsRequired = true)]
-        public PriceListPopulationAllCategoriesRule Rule { get; set; }
+        public PriceListPopulationAllCategoriesRule RuleType { get; set; }
 
         [DataMember]
-        public IEnumerable<string> RuleCodes { get; set; } = new List<string>();
+        public IEnumerable<string> RuleCodes { get; set; }
     }
 }

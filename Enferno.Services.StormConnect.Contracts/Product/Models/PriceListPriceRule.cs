@@ -10,7 +10,7 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Models
         public PriceListPriceRuleType Type { get; set; }
 
         [DataMember]
-        public decimal Value { get; set; }
+        public decimal? Value { get; set; }
 
         [DataMember]
         public bool? LimitToRecPrice { get; set; }

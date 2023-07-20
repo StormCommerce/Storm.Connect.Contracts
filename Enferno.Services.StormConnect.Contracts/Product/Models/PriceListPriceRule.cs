@@ -29,11 +29,5 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Models
 
         [DataMember]
         public IEnumerable<string> Flags { get; set; }
-
-        [DataMember]
-        public decimal? SupplementalChargeFixed { get; set; }
-
-        [DataMember]
-        public decimal? SupplementalChargePercent { get; set; }
     }
 }

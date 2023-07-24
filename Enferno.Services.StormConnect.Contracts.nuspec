@@ -12,7 +12,7 @@
     <copyright>Copyright 2020</copyright>
     <tags>Enferno Services StormConnect Contracts</tags>
     <dependencies>
-      <group targetFramework="net45">
+      <group targetFramework="net462">
         <dependency id="Newtonsoft.Json" version="13.0.2" />
         <dependency id="Enferno.Services.Contracts.Message" version="1.2.3" />
       </group>
@@ -23,12 +23,11 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="Enferno.Services.StormConnect.Contracts\bin\$configuration$\net45\Enferno.Services.StormConnect.Contracts.dll" target="lib/net45" />
-    <file src="Enferno.Services.StormConnect.Contracts\bin\$configuration$\net45\Enferno.Services.StormConnect.Contracts.pdb" target="lib/net45" />
-    <file src="Enferno.Services.StormConnect.Contracts\bin\$configuration$\net45\Enferno.Services.StormConnect.Contracts.xml" target="lib/net45" />
+    <file src="Enferno.Services.StormConnect.Contracts\bin\$configuration$\net462\Enferno.Services.StormConnect.Contracts.dll" target="lib/net462" />
+    <file src="Enferno.Services.StormConnect.Contracts\bin\$configuration$\net462\Enferno.Services.StormConnect.Contracts.pdb" target="lib/net462" />
+    <file src="Enferno.Services.StormConnect.Contracts\bin\$configuration$\net462\Enferno.Services.StormConnect.Contracts.xml" target="lib/net462" />
     <file src="Enferno.Services.StormConnect.Contracts\bin\$configuration$\netcoreapp2.0\Enferno.Services.StormConnect.Contracts.dll" target="lib/netcoreapp2.0" />
     <file src="Enferno.Services.StormConnect.Contracts\bin\$configuration$\netcoreapp2.0\Enferno.Services.StormConnect.Contracts.pdb" target="lib/netcoreapp2.0" />
     <file src="Enferno.Services.StormConnect.Contracts\bin\$configuration$\netcoreapp2.0\Enferno.Services.StormConnect.Contracts.xml" target="lib/netcoreapp2.0" />
   </files>
 </package>
-

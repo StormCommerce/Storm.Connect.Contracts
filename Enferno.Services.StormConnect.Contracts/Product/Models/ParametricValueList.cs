@@ -1,4 +1,5 @@
-﻿using System.Runtime.Serialization;
+﻿using System.Collections.Generic;
+using System.Runtime.Serialization;
 
 namespace Enferno.Services.StormConnect.Contracts.Product.Models
 {
@@ -9,5 +10,9 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Models
         public string Code { get; set; }
         [DataMember]
         public string Value { get; set; }
+        [DataMember]
+        public IEnumerable<ParametricValueListCulture> Cultures { get; set; }
+        [DataMember]
+        public string Description { get; set; }
     }
 }

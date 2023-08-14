@@ -27,6 +27,9 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Models
 
         [DataMember]
         public bool IsPublic { get; set; }
+        
+        [DataMember]
+        public bool IsFavorite { get; set; }
 
         [DataMember]
         public string TypeCode { get; set; }

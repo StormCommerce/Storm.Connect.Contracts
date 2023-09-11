@@ -27,6 +27,7 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Fields
         [EnumMember] PriceRulesCleanup = 19,
         [EnumMember] PriceRulesLimitedUpdate = 20,
         [EnumMember] Population = 21,
-        [EnumMember] PopulationCleanup = 22
+        [EnumMember] PopulationCleanup = 22,
+        [EnumMember] IsFavorite = 23
     }
 }

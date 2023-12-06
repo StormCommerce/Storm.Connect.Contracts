@@ -6,6 +6,8 @@ namespace Enferno.Services.StormConnect.Contracts.Order
     public enum OrderStatus
     {
         [EnumMember]
+        Created = 0,
+        [EnumMember]
         Allocation = 1,
         [EnumMember]
         Confirmed = 2,

@@ -18,5 +18,7 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         public bool IsComplete { get; set; }
         [DataMember(Order = 6)]
         public string ShipAdvisorOrderCode { get; set; }
+        [DataMember(Order = 7)]
+        public string TmsReference { get; set; }
     }
 }

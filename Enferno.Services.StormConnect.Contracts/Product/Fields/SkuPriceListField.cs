@@ -30,6 +30,8 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Fields
         [EnumMember]
         IsPriceDiscountableCreateOnly = 11,
         [EnumMember]
-        PriceRule = 12
+        PriceRule = 12,
+        [EnumMember]
+        FullfileResetInheritance = 13
     }
 }

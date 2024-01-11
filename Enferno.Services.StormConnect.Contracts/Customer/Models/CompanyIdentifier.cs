@@ -21,5 +21,7 @@ namespace Enferno.Services.StormConnect.Contracts.Customer.Models
         public string OrganizationNo { get; set; }
         [DataMember]
         public string Name { get; set; }
+        [DataMember]
+        public bool? IsPrimary { get; set; }
     }
 }

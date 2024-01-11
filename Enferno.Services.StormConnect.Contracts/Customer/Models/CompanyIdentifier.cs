@@ -8,7 +8,6 @@ namespace Enferno.Services.StormConnect.Contracts.Customer.Models
         string Code { get; set; }
         string OrganizationNo { get; set; }
         string Name { get; set; }
-        bool? IsPrimary { get; set; }
     }
 
     [DataContract(Name = "CompanyIdentifier", Namespace = "Enferno.Services.StormConnect.Contracts.Customer.Models")]

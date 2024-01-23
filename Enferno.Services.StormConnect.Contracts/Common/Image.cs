@@ -26,5 +26,11 @@ namespace Enferno.Services.StormConnect.Contracts.Common
 
         [DataMember(Order = 7)]
         public LocalizedString Description { get; set; }
+
+        [DataMember(Order = 8)]
+        public bool? IsVariantUnique { get; set; }
+
+        [DataMember(Order = 9)]
+        public bool? IsActive { get; set; }
     }
 }

@@ -24,11 +24,5 @@ namespace Enferno.Services.StormConnect.Contracts.Common
 
         [DataMember(Order = 6)]
         public List<ImageCulture> Cultures { get; set; }
-
-        [DataMember(Order = 7)]
-        public bool? IsVariantUnique { get; set; }
-
-        [DataMember(Order = 8)]
-        public bool? IsActive { get; set; }
     }
 }

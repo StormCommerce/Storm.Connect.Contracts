@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Runtime.Serialization;
 
 namespace Enferno.Services.StormConnect.Contracts.Common
@@ -22,15 +23,12 @@ namespace Enferno.Services.StormConnect.Contracts.Common
         public DateTime? LastModified { get; set; }
 
         [DataMember(Order = 6)]
-        public LocalizedString Name { get; set; }
+        public List<ImageCulture> Cultures { get; set; }
 
         [DataMember(Order = 7)]
-        public LocalizedString Description { get; set; }
-
-        [DataMember(Order = 8)]
         public bool? IsVariantUnique { get; set; }
 
-        [DataMember(Order = 9)]
+        [DataMember(Order = 8)]
         public bool? IsActive { get; set; }
     }
 }

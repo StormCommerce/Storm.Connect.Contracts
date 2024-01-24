@@ -13,7 +13,7 @@ pool:
 variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
-  majorMinorVersion: 2.11.0
+  majorMinorVersion: 2.11
   semanticVersion: $[counter(variables['majorMinorVersion'], 0)]
   ${{ if eq(variables['Build.SourceBranchName'], 'production') }}:
     versionSuffix: ''

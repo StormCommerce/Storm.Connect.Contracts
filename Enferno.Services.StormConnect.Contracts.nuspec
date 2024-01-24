@@ -26,8 +26,8 @@
     <file src="Enferno.Services.StormConnect.Contracts\bin\$configuration$\net462\Enferno.Services.StormConnect.Contracts.dll" target="lib/net462" />
     <file src="Enferno.Services.StormConnect.Contracts\bin\$configuration$\net462\Enferno.Services.StormConnect.Contracts.pdb" target="lib/net462" />
     <file src="Enferno.Services.StormConnect.Contracts\bin\$configuration$\net462\Enferno.Services.StormConnect.Contracts.xml" target="lib/net462" />
-    <file src="Enferno.Services.StormConnect.Contracts\bin\$configuration$\netcoreapp2.0\Enferno.Services.StormConnect.Contracts.dll" target="lib/netcoreapp3.1" />
-    <file src="Enferno.Services.StormConnect.Contracts\bin\$configuration$\netcoreapp2.0\Enferno.Services.StormConnect.Contracts.pdb" target="lib/netcoreapp3.1" />
-    <file src="Enferno.Services.StormConnect.Contracts\bin\$configuration$\netcoreapp2.0\Enferno.Services.StormConnect.Contracts.xml" target="lib/netcoreapp3.1" />
+    <file src="Enferno.Services.StormConnect.Contracts\bin\$configuration$\netcoreapp3.1\Enferno.Services.StormConnect.Contracts.dll" target="lib/netcoreapp3.1" />
+    <file src="Enferno.Services.StormConnect.Contracts\bin\$configuration$\netcoreapp3.1\Enferno.Services.StormConnect.Contracts.pdb" target="lib/netcoreapp3.1" />
+    <file src="Enferno.Services.StormConnect.Contracts\bin\$configuration$\netcoreapp3.1\Enferno.Services.StormConnect.Contracts.xml" target="lib/netcoreapp3.1" />
   </files>
 </package>

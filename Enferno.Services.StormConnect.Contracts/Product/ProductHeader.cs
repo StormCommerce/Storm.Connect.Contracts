@@ -18,6 +18,7 @@ namespace Enferno.Services.StormConnect.Contracts.Product
             SkuStructureItemFieldsThatAreSet = new List<SkuStructureItemField>();
             VariantFieldsThatAreSet = new List<VariantField>();
             VariantCultureFieldsThatAreSet = new List<VariantCultureField>();
+            ImageCultureFieldsThatAreSet = new List<ImageCultureField>();
         }
         [DataMember]
         public bool FullFile { get; set; }
@@ -39,5 +40,7 @@ namespace Enferno.Services.StormConnect.Contracts.Product
         public IList<VariantField> VariantFieldsThatAreSet { get; set; }
         [DataMember]
         public IList<VariantCultureField> VariantCultureFieldsThatAreSet { get; set; }
+        [DataMember]
+        public IList<ImageCultureField> ImageCultureFieldsThatAreSet { get; set; }
     }
 }

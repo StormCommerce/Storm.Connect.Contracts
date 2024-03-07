@@ -38,6 +38,8 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Fields
         [EnumMember]
         ParametricsCleanup = 15,
         [EnumMember]
-        TranslationRequested = 16
+        TranslationRequested = 16,
+        [EnumMember]
+        ImagesAndFilesCleanup = 17
     }
 }

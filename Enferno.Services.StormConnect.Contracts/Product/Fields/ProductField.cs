@@ -42,6 +42,8 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Fields
         [EnumMember]
         AdditionalImagesCleanup = 17,
         [EnumMember]
-        ParametricsCleanup = 18
+        ParametricsCleanup = 18,
+        [EnumMember]
+        ImagesAndFilesCleanup = 19
     }
 }

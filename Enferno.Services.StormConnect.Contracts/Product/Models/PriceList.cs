@@ -27,7 +27,7 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Models
 
         [DataMember]
         public bool IsPublic { get; set; }
-        
+
         [DataMember]
         public bool IsFavorite { get; set; }
 
@@ -76,5 +76,8 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Models
 
         [DataMember]
         public PriceListPopulation Population { get; set; }
+
+        [DataMember]
+        public InheritStructureCalculationRule InheritStructureCalculationRule { get; set; }
     }
 }

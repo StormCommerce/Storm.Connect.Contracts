@@ -7,6 +7,6 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Models
     {
         [EnumMember] None = 0,
         [EnumMember] ItemsUseDefaultPriceRule = 1,
-        [EnumMember] StandarPriceFromInheritedStructureItemSalePrice = 2
+        [EnumMember] StandardPriceFromInheritedStructureItemSalePrice = 2
     }
 }

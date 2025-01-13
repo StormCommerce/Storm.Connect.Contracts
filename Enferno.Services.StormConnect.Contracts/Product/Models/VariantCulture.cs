@@ -10,6 +10,24 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Models
         [DataMember]
         public string Name { get; set; }
         [DataMember]
+        public string SubHeader { get; set; }
+        [DataMember]
+        public string SubDescription { get; set; }
+        [DataMember]
+        public string DescriptionHeader { get; set; }
+        [DataMember]
+        public string Description { get; set; }
+        [DataMember]
+        public string Synonyms { get; set; }
+        [DataMember]
+        public string Title { get; set; }
+        [DataMember]
+        public string Tags { get; set; }
+        [DataMember]
+        public string MetaTags { get; set; }
+        [DataMember]
+        public string MetaDescription { get; set; }
+        [DataMember]
         public string UniqueUrlName { get; set; }
         [DataMember]
         public bool IsUniqueUrlNameManuallyMaintained { get; set; }

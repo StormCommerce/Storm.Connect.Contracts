@@ -7,6 +7,6 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Fields
     {
         [EnumMember] Name = 0,
         [EnumMember] Description = 1,
-      
+        [EnumMember] AltText = 2
     }
 }

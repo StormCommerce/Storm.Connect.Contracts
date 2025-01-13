@@ -13,5 +13,8 @@ namespace Enferno.Services.StormConnect.Contracts.Common
 
         [DataMember]
         public string Description { get; set; }
+
+        [DataMember]
+        public string AltText { get; set; }
     }
 }

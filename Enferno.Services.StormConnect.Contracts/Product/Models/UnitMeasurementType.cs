@@ -18,6 +18,10 @@ namespace Enferno.Services.StormConnect.Contracts.Product.Models
         [EnumMember]
         SquareMeter = 6,
         [EnumMember]
-        Meter = 7
+        Meter = 7,
+        [EnumMember]
+        Boxes = 8,
+        [EnumMember]
+        Rolls = 9
     }
 }

@@ -8,7 +8,7 @@
     <owners>Storm Commerce AB</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Contracts for Storm Connect.</description>
-    <releaseNotes>Added job log entity.</releaseNotes>
+    <releaseNotes>Added vat for price original on order item as well as vat for unit price on pricelistitem entity.</releaseNotes>
     <copyright>Copyright 2020</copyright>
     <tags>Enferno Services StormConnect Contracts</tags>
     <dependencies>

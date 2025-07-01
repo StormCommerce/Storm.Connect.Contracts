@@ -15,5 +15,7 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         public bool IsStandardPriceList { get; set; }
         [DataMember(Order = 5)]
         public bool IsActive { get; set; }
+        [DataMember(Order = 6)]
+        public decimal UnitPriceVat { get; set; }
     }
 }

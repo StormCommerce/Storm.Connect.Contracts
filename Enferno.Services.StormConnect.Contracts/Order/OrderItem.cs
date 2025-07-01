@@ -49,5 +49,7 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         public string ManufacturerCode { get; set; }
         [DataMember(Order = 22)]
         public decimal? Quantity2 { get; set; }
+        [DataMember(Order = 23)]
+        public decimal UnitPriceOriginalVat { get; set; }
     }
 }

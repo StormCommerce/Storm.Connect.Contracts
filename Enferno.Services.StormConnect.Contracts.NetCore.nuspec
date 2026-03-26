@@ -15,7 +15,7 @@
     <copyright>Copyright 2017</copyright>
     <tags>Enferno Services StormConnect Contracts NetCore</tags>
     <dependencies>
-      <dependency id="Newtonsoft.Json" version="7.0.1" />
+      <dependency id="Newtonsoft.Json" version="13.0.4" />
     </dependencies>
   </metadata>
   <files>

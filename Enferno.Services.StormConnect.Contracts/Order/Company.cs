@@ -35,5 +35,7 @@ namespace Enferno.Services.StormConnect.Contracts.Order
         public bool? IsActive { get; set; }
         [DataMember(Order = 15)]
         public CodeValues AdditionalInfo { get; set; }
+        [DataMember(Order = 16)]
+        public int? Id { get; set; }
     }
 }
